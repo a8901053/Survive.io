@@ -6,7 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Survive.io" />
+        <module name="client" />
+        <module name="server" />
+        <module name="router" />
+        <module name="domain" />
       </profile>
     </annotationProcessing>
   </component>
