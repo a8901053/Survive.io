@@ -1,9 +1,9 @@
-package tw.waterball.survive.io.client.sprite.Role;
+package tw.waterball.survive.io.client.sprite.role;
 
 
 import tw.waterball.survive.io.client.sprite.Sprite;
-import tw.waterball.survive.io.client.sprite.Weapon.Magazine;
-import tw.waterball.survive.io.client.sprite.Weapon.WeaponSlot;
+import tw.waterball.survive.io.client.sprite.weapon.Magazine;
+import tw.waterball.survive.io.client.sprite.weapon.WeaponSlot;
 
 import java.util.List;
 

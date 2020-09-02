@@ -1,4 +1,4 @@
-package tw.waterball.survive.io.client.sprite.Weapon;
+package tw.waterball.survive.io.client.sprite.weapon;
 
 public class Gun extends Weapon {
 	private Magazine magazine;

@@ -1,8 +1,8 @@
 package tw.waterball.survive.io.client.controller;
 
 import tw.waterball.survive.io.client.clients.Server;
-import tw.waterball.survive.io.client.sprite.Role.Player;
-import tw.waterball.survive.io.client.sprite.Weapon.Weapon;
+import tw.waterball.survive.io.client.sprite.role.Player;
+import tw.waterball.survive.io.client.sprite.weapon.Weapon;
 import tw.waterball.survive.io.client.view.GameView;
 
 public class PlayerController {

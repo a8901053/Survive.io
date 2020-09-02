@@ -2,7 +2,7 @@ package tw.waterball.survive.io.client.controller;
 
 import tw.waterball.survive.io.client.prototypefactory.SpritePrototypeFactory;
 import tw.waterball.survive.io.client.sprite.Sprite;
-import tw.waterball.survive.io.client.sprite.Terrain.Terrain;
+import tw.waterball.survive.io.client.sprite.terrain.Terrain;
 import tw.waterball.survive.io.client.view.GameView;
 
 import java.util.List;
