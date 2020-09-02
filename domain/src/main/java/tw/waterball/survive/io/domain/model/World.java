@@ -7,12 +7,14 @@ import tw.waterball.survive.io.domain.model.gameobject.role.Role;
 import tw.waterball.survive.io.domain.model.gameobject.terrain.Terrain;
 import tw.waterball.survive.io.domain.model.prototypefactory.GameObjectPrototypeFactory;
 
+import java.util.List;
+
 public class World {
 	private GameObjectPrototypeFactory[] gameObjectPrototypeFactory;
-	private GameObject[] gameObjects;
-	private Player[] players;
-	private Monster[] monsters;
-	private Terrain[] maps;
+	private List<GameObject> gameObjects;
+	private List<Player> players;
+	private List<Monster> monsters;
+	private List<Terrain> maps;
 
 	public boolean checkHavePlayersInGame() {
 		return false;
@@ -46,11 +48,11 @@ public class World {
 
 	}
 
-	public GameObject[] getGameObjectsNearThisPlayer(Player player) {
+	public List<GameObject> getGameObjectsNearThisPlayer(Player player) {
 		return null;
 	}
 
-	public Player[] getPlayersNearThisGameObject(GameObject gameObject) {
+	public List<Player> getPlayersNearThisGameObject(GameObject gameObject) {
 		return null;
 	}
 
