@@ -2,7 +2,6 @@ package tw.waterball.survive.io.client.view;
 
 
 import tw.waterball.survive.io.client.controller.PlayerController;
-import tw.waterball.survive.io.client.sprite.role.Role;
 import tw.waterball.survive.io.client.sprite.Sprite;
 
 
