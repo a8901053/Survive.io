@@ -2,9 +2,9 @@ package tw.waterball.survive.io.client.view;
 
 
 import tw.waterball.survive.io.client.controller.PlayerController;
+import tw.waterball.survive.io.client.sprite.Role.Role;
 import tw.waterball.survive.io.client.sprite.Sprite;
 import tw.waterball.survive.io.client.sprite.Weapon.Weapon;
-import tw.waterball.survive.io.domain.model.gameobject.role.Role;
 
 public abstract class GameView {
 	private State state;
