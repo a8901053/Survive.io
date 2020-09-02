@@ -11,6 +11,10 @@ public interface Client {
 
     void onHeartBeat();
 
+    void onMoveForwardOrBackward(Role role);
+
+    void onMoveLeftwardOrLeftward(Role role);
+
     void onSufferJury(Role role, int damage);
 
     void onThrowWeapon(Weapon weapon);

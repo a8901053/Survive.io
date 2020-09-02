@@ -19,6 +19,16 @@ public class ClientSocketAdapter implements Client {
 	}
 
 	@Override
+	public void onMoveForwardOrBackward(Role role) {
+
+	}
+
+	@Override
+	public void onMoveLeftwardOrLeftward(Role role) {
+
+	}
+
+	@Override
 	public void onSufferJury(Role role, int damage) {
 
 	}
