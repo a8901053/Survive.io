@@ -5,10 +5,9 @@ import tw.waterball.survive.io.domain.model.gameobject.role.Role;
 
 public abstract class Weapon extends GameObject {
 	private WeaponName weaponName;
-	private int damage;
 	private Role currentHeldThisWeaponRole;
+	private int damage;
 	private boolean isInFloor;
-	private boolean isInBody;
 
 	public abstract void attack();
 

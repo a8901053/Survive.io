@@ -16,7 +16,7 @@ public abstract class Role extends GameObject {
 	private int maxHp;
 	private List<WeaponSlot> weaponSlots;
 	private List<Magazine> magazines;
-	private Weapon currentWeapon;
+	private WeaponSlot currentWeaponSlot;
 
 	public void turn(float angle) {
 

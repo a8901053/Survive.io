@@ -6,7 +6,7 @@ import tw.waterball.survive.io.server.Client;
 import tw.waterball.survive.io.server.ClientSocketAdapter;
 
 public class Player extends Role implements Client {
-	private Client client = new ClientSocketAdapter();
+	private final Client client = new ClientSocketAdapter();
 
 	public void reload() {
 

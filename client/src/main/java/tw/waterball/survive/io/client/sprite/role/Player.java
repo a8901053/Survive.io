@@ -1,4 +1,4 @@
-package tw.waterball.survive.io.client.sprite.Role;
+package tw.waterball.survive.io.client.sprite.role;
 
 public class Player extends Role {
 
