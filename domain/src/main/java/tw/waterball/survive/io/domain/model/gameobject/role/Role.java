@@ -5,6 +5,8 @@ import tw.waterball.survive.io.domain.model.gameobject.weapon.Magazine;
 import tw.waterball.survive.io.domain.model.gameobject.weapon.Weapon;
 import tw.waterball.survive.io.domain.model.gameobject.weapon.WeaponSlot;
 
+import java.util.List;
+
 public abstract class Role extends GameObject {
 	private String name;
 	private int money;
@@ -12,9 +14,9 @@ public abstract class Role extends GameObject {
 	private int def;
 	private int hp;
 	private int maxHp;
-	private WeaponSlot[] weaponSlots;
+	private List<WeaponSlot> weaponSlots;
+	private List<Magazine> magazines;
 	private Weapon currentWeapon;
-	private Magazine[] magazines;
 
 	public void turn(float angle) {
 

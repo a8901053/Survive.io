@@ -17,4 +17,6 @@ public abstract class Weapon extends Sprite {
 
     }
 
+    public abstract void attack();
+
 }
