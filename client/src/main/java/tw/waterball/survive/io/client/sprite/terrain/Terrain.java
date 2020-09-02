@@ -1,4 +1,4 @@
-package tw.waterball.survive.io.client.sprite.terrain;
+package tw.waterball.survive.io.client.sprite.Terrain;
 
 import tw.waterball.survive.io.client.sprite.Sprite;
 

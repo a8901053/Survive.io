@@ -18,6 +18,14 @@ public class Player extends Role {
 
 	}
 
+	public void sufferJury(int damage) {
+
+	}
+
+	public boolean isDead() {
+		return false;
+	}
+
 	public void turn(float angle) {
 
 	}
