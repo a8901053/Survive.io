@@ -1,13 +1,13 @@
-package tw.waterball.survive.io.domain.model.gameobject.role;
+package tw.waterball.survive.io.server.worldobject.role;
 
-import tw.waterball.survive.io.domain.model.gameobject.GameObject;
-import tw.waterball.survive.io.domain.model.gameobject.weapon.Magazine;
-import tw.waterball.survive.io.domain.model.gameobject.weapon.Weapon;
-import tw.waterball.survive.io.domain.model.gameobject.weapon.WeaponSlot;
+import tw.waterball.survive.io.server.worldobject.WorldObject;
+import tw.waterball.survive.io.server.worldobject.weapon.Magazine;
+import tw.waterball.survive.io.server.worldobject.weapon.Weapon;
+import tw.waterball.survive.io.server.worldobject.weapon.WeaponSlot;
 
 import java.util.List;
 
-public abstract class Role extends GameObject {
+public abstract class Role extends WorldObject {
 	private String name;
 	private int money;
 	private int speed;

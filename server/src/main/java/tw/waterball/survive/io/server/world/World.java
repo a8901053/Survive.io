@@ -1,17 +1,17 @@
-package tw.waterball.survive.io.domain.model;
+package tw.waterball.survive.io.server.world;
 
-import tw.waterball.survive.io.domain.model.gameobject.GameObject;
-import tw.waterball.survive.io.domain.model.gameobject.role.Monster;
-import tw.waterball.survive.io.domain.model.gameobject.role.Player;
-import tw.waterball.survive.io.domain.model.gameobject.role.Role;
-import tw.waterball.survive.io.domain.model.gameobject.terrain.Terrain;
-import tw.waterball.survive.io.domain.model.prototypefactory.GameObjectPrototypeFactory;
+import tw.waterball.survive.io.server.worldobject.WorldObject;
+import tw.waterball.survive.io.server.worldobject.role.Monster;
+import tw.waterball.survive.io.server.worldobject.role.Player;
+import tw.waterball.survive.io.server.worldobject.role.Role;
+import tw.waterball.survive.io.server.worldobject.terrain.Terrain;
+import tw.waterball.survive.io.server.prototypefactory.WorldObjectPrototypeFactory;
 
 import java.util.List;
 
 public class World {
-    private GameObjectPrototypeFactory gameObjectPrototypeFactory;
-    private List<GameObject> gameObjects;
+    private WorldObjectPrototypeFactory worldObjectPrototypeFactory;
+    private List<WorldObject> worldObjects;
     private List<Player> players;
     private List<Monster> monsters;
     private List<Terrain> maps;
@@ -44,19 +44,19 @@ public class World {
 
     }
 
-    public void addGameObject(GameObject gameObject) {
+    public void addWorldObject(WorldObject worldObject) {
 
     }
 
-    public List<GameObject> getGameObjectsNearThisPlayer(Player player) {
+    public List<WorldObject> getWorldObjectsNearThisPlayer(Player player) {
         return null;
     }
 
-    public List<Player> getPlayersNearThisGameObject(GameObject gameObject) {
+    public List<Player> getPlayersNearThisWorldObject(WorldObject worldObject) {
         return null;
     }
 
-    public void removeGameObject(GameObject sprite) {
+    public void removeWorldObject(WorldObject worldObject) {
 
     }
 
@@ -72,7 +72,7 @@ public class World {
 
     }
 
-    public void broadCastPlayersNearThisGameObject(GameObject gameObject, Event event) {
+    public void broadCastPlayersNearThisWorldObject(WorldObject worldObject, Event event) {
 
     }
 
@@ -84,7 +84,7 @@ public class World {
         return null;
     }
 
-    public GameObject findGameObjectById(int id) {
+    public WorldObject findWorldObjectById(int id) {
         return null;
     }
 

@@ -1,7 +1,7 @@
-package tw.waterball.survive.io.domain.model.gameobject.role;
+package tw.waterball.survive.io.server.worldobject.role;
 
-import tw.waterball.survive.io.domain.model.gameobject.GameObject;
-import tw.waterball.survive.io.domain.model.gameobject.weapon.Weapon;
+import tw.waterball.survive.io.server.worldobject.WorldObject;
+import tw.waterball.survive.io.server.worldobject.weapon.Weapon;
 import tw.waterball.survive.io.server.Client;
 import tw.waterball.survive.io.server.ClientSocketAdapter;
 
@@ -33,8 +33,8 @@ public class Player extends Role implements Client {
     }
 
     @Override
-    public void onSufferJury(Role role, int damage) {
-        client.onSufferJury(role, damage);
+    public void onSufferInJury(Role role, int damage) {
+        client.onSufferInJury(role, damage);
     }
 
     @Override
@@ -73,7 +73,7 @@ public class Player extends Role implements Client {
     }
 
     @Override
-    public void onUpdate(GameObject gameObject) {
+    public void onUpdate(WorldObject gameObject) {
         client.onUpdate(gameObject);
     }
 }

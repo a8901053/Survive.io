@@ -1,4 +1,4 @@
-package tw.waterball.survive.io.domain.model.gameobject.weapon;
+package tw.waterball.survive.io.server.worldobject.weapon;
 
 public class Gun extends Weapon {
 	private int totalBullet;
