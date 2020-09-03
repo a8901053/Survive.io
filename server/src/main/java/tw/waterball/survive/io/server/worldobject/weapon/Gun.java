@@ -1,15 +1,14 @@
 package tw.waterball.survive.io.server.worldobject.weapon;
 
 public class Gun extends Weapon {
-	private int totalBullet;
-	private int inOneShotBullet;
+	private int bulletsShotAtOnce;
 	private Magazine magazine;
 
 	public void reload(Magazine magazine) {
 
 	}
 
-	public void attack() {
+	public void useWeapon() {
 
 	}
 }

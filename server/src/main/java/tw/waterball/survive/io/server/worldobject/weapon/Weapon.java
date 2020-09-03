@@ -5,13 +5,13 @@ import tw.waterball.survive.io.server.worldobject.role.Role;
 
 public abstract class Weapon extends WorldObject {
 	private WeaponName weaponName;
-	private Role currentHeldThisWeaponRole;
+	private Role heldThisWeaponRole;
 	private int damage;
-	private boolean isInFloor;
+	private boolean isOnFloor;
 
-	public abstract void attack();
+	public abstract void useWeapon();
 
-	public void setIsInFloor(boolean isInFloor) {
+	public void setIsOnFloor(boolean isOnFloor) {
 
 	}
 

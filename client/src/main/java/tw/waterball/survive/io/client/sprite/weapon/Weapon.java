@@ -5,14 +5,13 @@ import tw.waterball.survive.io.client.sprite.Sprite;
 
 public abstract class Weapon extends Sprite {
     private int heldPlayerId;
-    private boolean isInFloor;
-    private boolean isInBody;
+    private boolean isOnFloor;
     private String soundPath;
 
-    public void setIsInFloor(boolean isInFloor) {
+    public void setIsOnFloor(boolean isOnFloor) {
 
     }
 
-    public abstract void attack();
+    public abstract void useWeapon();
 
 }

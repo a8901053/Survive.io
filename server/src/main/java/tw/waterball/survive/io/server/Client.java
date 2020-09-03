@@ -15,7 +15,7 @@ public interface Client {
 
     void onMoveLeftwardOrLeftward(Role role);
 
-    void onSufferInJury(Role role, int damage);
+    void onInJury(Role role, int damage);
 
     void onThrowWeapon(Weapon weapon);
 

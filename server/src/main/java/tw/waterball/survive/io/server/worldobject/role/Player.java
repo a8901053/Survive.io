@@ -33,8 +33,8 @@ public class Player extends Role implements Client {
     }
 
     @Override
-    public void onSufferInJury(Role role, int damage) {
-        client.onSufferInJury(role, damage);
+    public void onInJury(Role role, int damage) {
+        client.onInJury(role, damage);
     }
 
     @Override

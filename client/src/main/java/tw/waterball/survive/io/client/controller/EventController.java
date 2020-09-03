@@ -7,7 +7,8 @@ import tw.waterball.survive.io.client.view.GameView;
 
 import java.util.List;
 
-public abstract class EventController {
+public class EventController {
+    private SpriteContainer spriteContainer;
     private List<Sprite> sprites;
     private List<Terrain> map;
     private SpritePrototypeFactory spritePrototypeFactory;

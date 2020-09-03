@@ -9,7 +9,7 @@ public class PlayerController {
     private Player clientPlayer;
     private Weapon playerCurrentWeapon;
     private GameView gameView;
-    private EventController eventController;
+    private SpriteContainer spriteContainer;
     private Server server;
 
     public void playerAttack() {

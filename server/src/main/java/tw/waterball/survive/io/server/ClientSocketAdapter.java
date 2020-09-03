@@ -29,7 +29,7 @@ public class ClientSocketAdapter implements Client {
 	}
 
 	@Override
-	public void onSufferInJury(Role role, int damage) {
+	public void onInJury(Role role, int damage) {
 
 	}
 
