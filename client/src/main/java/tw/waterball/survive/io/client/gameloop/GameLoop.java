@@ -1,9 +1,11 @@
 package tw.waterball.survive.io.client.gameloop;
 
 import tw.waterball.survive.io.client.controller.SpriteContainer;
-import tw.waterball.survive.io.client.sprite.Sprite;
 import tw.waterball.survive.io.client.view.GameView;
 
+/**
+ * @author - timt1028@gmail.com
+ */
 public class GameLoop {
 
     private GameView gameView;
@@ -15,7 +17,7 @@ public class GameLoop {
     }
 
     public void start() {
-        new Thread(() ->  {
+        new Thread(() -> {
             while (true) {
                 delay(15);
                 gameView.onRender(spriteContainer.getSprites());

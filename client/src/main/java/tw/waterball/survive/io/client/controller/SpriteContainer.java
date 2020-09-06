@@ -9,8 +9,7 @@ public class SpriteContainer {
 
     private List<Sprite> sprites = new ArrayList<>();
 
-
-    public void addSprites(Sprite sprite) {
+    public void addSprite(Sprite sprite) {
         sprites.add(sprite);
     }
 
