@@ -7,7 +7,7 @@ public class Gun extends Weapon {
 	public void reload(Magazine magazine) {
 
 	}
-
+	@Override
 	public void useWeapon() {
 
 	}

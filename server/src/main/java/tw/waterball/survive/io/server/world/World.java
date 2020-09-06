@@ -1,11 +1,11 @@
 package tw.waterball.survive.io.server.world;
 
+import tw.waterball.survive.io.server.prototypefactory.WorldObjectPrototypeFactory;
 import tw.waterball.survive.io.server.worldobject.WorldObject;
 import tw.waterball.survive.io.server.worldobject.role.Monster;
 import tw.waterball.survive.io.server.worldobject.role.Player;
 import tw.waterball.survive.io.server.worldobject.role.Role;
 import tw.waterball.survive.io.server.worldobject.terrain.Terrain;
-import tw.waterball.survive.io.server.prototypefactory.WorldObjectPrototypeFactory;
 
 import java.util.List;
 
@@ -14,17 +14,17 @@ public class World {
     private List<WorldObject> worldObjects;
     private List<Player> players;
     private List<Monster> monsters;
-    private List<Terrain> maps;
+    private List<Terrain> map;
 
     public boolean checkHavePlayersInGame() {
         return false;
     }
 
-    public boolean checkMonsterAliveAmountInRange() {
+    public boolean isAliveMonsterAmountReachTheUpperLimitInMap() {
         return false;
     }
 
-    public boolean checkHaveSamePlayer(String playerName) {
+    public boolean isPlayerNameExists(String playerName) {
         return false;
     }
 
@@ -48,11 +48,11 @@ public class World {
 
     }
 
-    public List<WorldObject> getWorldObjectsNearThisPlayer(Player player) {
+    public List<WorldObject> getWorldObjectsOfAroundPlayer(Player player) {
         return null;
     }
 
-    public List<Player> getPlayersNearThisWorldObject(WorldObject worldObject) {
+    public List<Player> getPlayersOfAroundWorldObject(WorldObject worldObject) {
         return null;
     }
 
@@ -60,19 +60,19 @@ public class World {
 
     }
 
-    public void giveMoneyToRole(int money, Role role) {
+    public void giveRoleMoney(int money, Role role) {
 
     }
 
-    public void roleIsDead(Role deadRole, Role attacker) {
+    public void handleDeadRole(Role deadRole, Role attacker) {
 
     }
 
-    public void dropThisPlayerWeapon() {
+    public void dropRoleWeapon(Role role) {
 
     }
 
-    public void broadCastPlayersNearThisWorldObject(WorldObject worldObject, Event event) {
+    public void broadCastPlayersOfAroundWorldObject(WorldObject worldObject, Event event) {
 
     }
 

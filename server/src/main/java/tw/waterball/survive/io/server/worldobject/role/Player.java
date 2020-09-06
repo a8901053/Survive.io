@@ -1,9 +1,9 @@
 package tw.waterball.survive.io.server.worldobject.role;
 
-import tw.waterball.survive.io.server.worldobject.WorldObject;
-import tw.waterball.survive.io.server.worldobject.weapon.Weapon;
 import tw.waterball.survive.io.server.Client;
 import tw.waterball.survive.io.server.ClientSocketAdapter;
+import tw.waterball.survive.io.server.worldobject.WorldObject;
+import tw.waterball.survive.io.server.worldobject.weapon.Weapon;
 
 public class Player extends Role implements Client {
     private final Client client = new ClientSocketAdapter();
@@ -13,8 +13,8 @@ public class Player extends Role implements Client {
     }
 
     @Override
-    public void onLoginSuccess() {
-        client.onLoginSuccess();
+    public void onLoginSuccessfully() {
+        client.onLoginSuccessfully();
     }
 
     @Override
@@ -23,18 +23,29 @@ public class Player extends Role implements Client {
     }
 
     @Override
-    public void onMoveForwardOrBackward(Role role) {
-        client.onMoveForwardOrBackward(role);
+    public void onMoveForward(Role role) {
+
+        client.onMoveForward(role);
     }
 
     @Override
-    public void onMoveLeftwardOrLeftward(Role role) {
-        client.onMoveLeftwardOrLeftward(role);
+    public void onMoveBackward(Role role) {
+        client.onMoveBackward(role);
     }
 
     @Override
-    public void onInJury(Role role, int damage) {
-        client.onInJury(role, damage);
+    public void onMoveLeftward(Role role) {
+        client.onMoveLeftward(role);
+    }
+
+    @Override
+    public void onMoveRightward(Role role) {
+        client.onMoveRightward(role);
+    }
+
+    @Override
+    public void onInjury(Role role, int damage) {
+        client.onInjury(role, damage);
     }
 
     @Override
@@ -53,8 +64,8 @@ public class Player extends Role implements Client {
     }
 
     @Override
-    public void onAttack(Role role) {
-        client.onAttack(role);
+    public void onWeaponUsed(Role role) {
+        client.onWeaponUsed(role);
     }
 
     @Override
@@ -73,7 +84,7 @@ public class Player extends Role implements Client {
     }
 
     @Override
-    public void onUpdate(WorldObject gameObject) {
-        client.onUpdate(gameObject);
+    public void onWorldObjectAddPlayerSight(WorldObject worldObject) {
+        client.onWorldObjectAddPlayerSight(worldObject);
     }
 }

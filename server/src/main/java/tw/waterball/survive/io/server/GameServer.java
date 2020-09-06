@@ -14,7 +14,7 @@ public class GameServer {
 
     }
 
-    public void onPlayerSameName() {
+    public void onPlayerNameExists() {
 
     }
 

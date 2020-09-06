@@ -2,7 +2,7 @@ package tw.waterball.survive.io.client.clients;
 
 public interface Server {
 
-    void attack(int playerId);
+    void useWeapon(int playerId);
     void reload(int playerId);
     void turn(int playerId,float angle);
     void moveForward(int playerId);

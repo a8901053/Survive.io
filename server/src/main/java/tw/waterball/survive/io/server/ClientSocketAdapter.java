@@ -9,7 +9,7 @@ import tw.waterball.survive.io.server.worldobject.weapon.Weapon;
 public class ClientSocketAdapter implements Client {
 
 	@Override
-	public void onLoginSuccess() {
+	public void onLoginSuccessfully() {
 
 	}
 
@@ -19,17 +19,28 @@ public class ClientSocketAdapter implements Client {
 	}
 
 	@Override
-	public void onMoveForwardOrBackward(Role role) {
+	public void onMoveForward(Role role) {
 
 	}
 
 	@Override
-	public void onMoveLeftwardOrLeftward(Role role) {
+	public void onMoveBackward(Role role) {
 
 	}
 
 	@Override
-	public void onInJury(Role role, int damage) {
+	public void onMoveLeftward(Role role) {
+
+	}
+
+	@Override
+	public void onMoveRightward(Role role) {
+
+	}
+
+
+	@Override
+	public void onInjury(Role role, int damage) {
 
 	}
 
@@ -49,7 +60,7 @@ public class ClientSocketAdapter implements Client {
 	}
 
 	@Override
-	public void onAttack(Role role) {
+	public void onWeaponUsed(Role role) {
 
 	}
 
@@ -69,7 +80,7 @@ public class ClientSocketAdapter implements Client {
 	}
 
 	@Override
-	public void onUpdate(WorldObject gameObject) {
+	public void onWorldObjectAddPlayerSight(WorldObject worldObject) {
 
 	}
 }

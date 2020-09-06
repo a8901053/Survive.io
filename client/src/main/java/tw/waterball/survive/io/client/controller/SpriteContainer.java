@@ -6,13 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SpriteContainer {
-    private List<Sprite> sprites = new ArrayList<>();
+    private final List<Sprite> sprites = new ArrayList<>();
+    private final List<Sprite> map = new ArrayList<>();
 
     public List<Sprite> getSprites() {
         return sprites;
     }
 
-    public void setSprites(List<Sprite> sprites) {
-        this.sprites = sprites;
+    public List<Sprite> getMap() {
+        return map;
     }
 }

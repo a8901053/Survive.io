@@ -21,7 +21,7 @@ public class GameController {
 
     }
 
-    public void attack(int playerId, float angle) {
+    public void useWeapon(int playerId, float angle) {
 
     }
 

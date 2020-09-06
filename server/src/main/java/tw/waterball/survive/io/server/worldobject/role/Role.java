@@ -50,7 +50,7 @@ public abstract class Role extends WorldObject {
 
 	}
 
-	public void sufferInjury(Role attackRole, int damage) {
+	public void injury(Role attackRole, int damage) {
 
 	}
 
@@ -58,11 +58,11 @@ public abstract class Role extends WorldObject {
 		return false;
 	}
 
-	public void giveThisRoleMoneyToAttacker(Role attackRole) {
+	public void giveAttackerMoney(Role attackRole) {
 
 	}
 
-	public void dropThisRoleWeapon() {
+	public void dropRoleWeapon() {
 
 	}
 

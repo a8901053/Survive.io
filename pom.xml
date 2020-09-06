@@ -21,8 +21,7 @@
         </plugins>
     </build>
     <modules>
-        <module>router</module>
-        <module>domain</module>
+        <module>protocol</module>
         <module>client</module>
         <module>server</module>
     </modules>

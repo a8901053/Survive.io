@@ -3,6 +3,8 @@ package tw.waterball.survive.io.client.view;
 
 import tw.waterball.survive.io.client.controller.PlayerController;
 import tw.waterball.survive.io.client.sprite.Sprite;
+import tw.waterball.survive.io.client.sprite.role.RoleSprite;
+import tw.waterball.survive.io.client.sprite.weapon.WeaponSprite;
 
 
 public abstract class GameView {
@@ -13,23 +15,23 @@ public abstract class GameView {
 
     }
 
-    public void onRender(Sprite[] sprites) {
+    public void onRender(Sprite... sprites) {
 
     }
 
-    public void onAttack(String soundPath, Role role) {
+    public void onWeaponUsed(WeaponSprite weaponSprite) {
 
     }
 
-    public void onPlayerLoginSuccess() {
+    public void onPlayerLoginSuccessfully() {
 
     }
 
-    public void onPlayerSameName() {
+    public void onPlayerNameExists() {
 
     }
 
-    public void onNoBulletToLoad() {
+    public void onNoBulletToReload() {
 
     }
 
@@ -37,35 +39,35 @@ public abstract class GameView {
 
     }
 
-    public void onPickUpWeapon(Role role) {
+    public void onPickUpWeapon(RoleSprite roleSprite) {
 
     }
 
-    public void onThrowWeapon(Role role) {
+    public void onThrowWeapon(RoleSprite roleSprite) {
 
     }
 
-    public void onSufferInjury(Role role,int damage) {
+    public void onInjury(RoleSprite roleSprite, int damage) {
 
     }
 
-    public void onSwitchWeapon(Role role) {
+    public void onSwitchWeapon(RoleSprite roleSprite) {
 
     }
 
-    public void onReload(Role role) {
+    public void onReload(RoleSprite roleSprite) {
 
     }
 
-    public void onDead(Role role) {
+    public void onDead(RoleSprite roleSprite) {
 
     }
 
-    public void onMove(Role role) {
+    public void onMove(RoleSprite roleSprite) {
 
     }
 
-    public void onTurn(Role role) {
+    public void onTurn(RoleSprite roleSprite) {
 
     }
 

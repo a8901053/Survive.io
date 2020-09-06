@@ -2,19 +2,14 @@ package tw.waterball.survive.io.client.controller;
 
 import tw.waterball.survive.io.client.prototypefactory.SpritePrototypeFactory;
 import tw.waterball.survive.io.client.sprite.Sprite;
-import tw.waterball.survive.io.client.sprite.terrain.Terrain;
 import tw.waterball.survive.io.client.view.GameView;
-
-import java.util.List;
 
 public class EventController {
     private SpriteContainer spriteContainer;
-    private List<Sprite> sprites;
-    private List<Terrain> map;
     private SpritePrototypeFactory spritePrototypeFactory;
     private GameView gameView;
 
-    public void onSufferJury(int id, int damage) {
+    public void onSufferingInjury(int id, int damage) {
 
     }
 
@@ -30,7 +25,7 @@ public class EventController {
 
     }
 
-    public void onAttack(int roleId) {
+    public void onWeaponUsed(int roleId) {
 
     }
 
@@ -46,11 +41,11 @@ public class EventController {
 
     }
 
-    public void onUpdate(Sprite sprite) {
+    public void onSpriteAddPlayerSight(Sprite sprite) {
 
     }
 
-    public void onPlayerLoginSuccess() {
+    public void onPlayerLoginSuccessfully() {
 
     }
 

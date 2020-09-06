@@ -3,7 +3,7 @@ package tw.waterball.survive.io.client.clients;
 public class ServerAdapter implements Server {
 
     @Override
-    public void attack(int playerId) {
+    public void useWeapon(int playerId) {
 
     }
 

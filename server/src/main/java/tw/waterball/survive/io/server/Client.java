@@ -7,15 +7,19 @@ import tw.waterball.survive.io.server.worldobject.weapon.Weapon;
 
 public interface Client {
 
-    void onLoginSuccess();
+    void onLoginSuccessfully();
 
     void onHeartBeat();
 
-    void onMoveForwardOrBackward(Role role);
+    void onMoveForward(Role role);
 
-    void onMoveLeftwardOrLeftward(Role role);
+    void onMoveBackward(Role role);
 
-    void onInJury(Role role, int damage);
+    void onMoveLeftward(Role role);
+
+    void onMoveRightward(Role role);
+
+    void onInjury(Role role, int damage);
 
     void onThrowWeapon(Weapon weapon);
 
@@ -23,7 +27,7 @@ public interface Client {
 
     void onReload(Role role);
 
-    void onAttack(Role role);
+    void onWeaponUsed(Role role);
 
     void onPickUpWeapon(Player player, Weapon weapon);
 
@@ -31,6 +35,6 @@ public interface Client {
 
     void onDead(Role role);
 
-    void onUpdate(WorldObject gameObject);
+    void onWorldObjectAddPlayerSight(WorldObject worldObject);
 
 }
