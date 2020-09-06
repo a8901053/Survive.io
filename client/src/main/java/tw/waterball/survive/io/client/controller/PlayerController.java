@@ -40,7 +40,11 @@ public class PlayerController {
 
     }
 
-    public void playerThrowWeapon() {
+    public void playerThrowCurrentWeapon() {
+
+    }
+
+    public void playerSwitchWeapon(int weaponIndex) {
 
     }
 

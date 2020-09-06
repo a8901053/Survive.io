@@ -41,7 +41,7 @@ public class EventController {
 
     }
 
-    public void onSpriteAddPlayerSight(Sprite sprite) {
+    public void onSpriteJoinsPlayerViewPort(Sprite sprite) {
 
     }
 

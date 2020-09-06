@@ -48,7 +48,7 @@ public class ServerAdapter implements Server {
     }
 
     @Override
-    public void switchWeapon(int playerId) {
+    public void switchWeapon(int playerId,int weaponIndex) {
 
     }
 }

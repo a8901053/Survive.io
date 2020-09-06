@@ -18,7 +18,7 @@ public abstract class RoleSprite extends Sprite {
     private List<MagazineSprite> magazineSprites;
     private WeaponSlotSprite currentWeaponSlotSprite;
 
-    public void injury(int damage) {
+    public void injure(int damage) {
 
     }
 

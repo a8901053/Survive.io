@@ -38,14 +38,13 @@ public class ClientSocketAdapter implements Client {
 
 	}
 
-
 	@Override
-	public void onInjury(Role role, int damage) {
+	public void onInjured(Role role, int damage) {
 
 	}
 
 	@Override
-	public void onThrowWeapon(Weapon weapon) {
+	public void onThrowCurrentWeapon(Weapon weapon) {
 
 	}
 
@@ -80,7 +79,7 @@ public class ClientSocketAdapter implements Client {
 	}
 
 	@Override
-	public void onWorldObjectAddPlayerSight(WorldObject worldObject) {
+	public void onWorldObjectJoinsPlayerViewPort(WorldObject worldObject) {
 
 	}
 }

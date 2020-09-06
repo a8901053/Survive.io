@@ -24,7 +24,6 @@ public class Player extends Role implements Client {
 
     @Override
     public void onMoveForward(Role role) {
-
         client.onMoveForward(role);
     }
 
@@ -44,13 +43,13 @@ public class Player extends Role implements Client {
     }
 
     @Override
-    public void onInjury(Role role, int damage) {
-        client.onInjury(role, damage);
+    public void onInjured(Role role, int damage) {
+        client.onInjured(role, damage);
     }
 
     @Override
-    public void onThrowWeapon(Weapon weapon) {
-        client.onThrowWeapon(weapon);
+    public void onThrowCurrentWeapon(Weapon weapon) {
+        client.onThrowCurrentWeapon(weapon);
     }
 
     @Override
@@ -84,7 +83,7 @@ public class Player extends Role implements Client {
     }
 
     @Override
-    public void onWorldObjectAddPlayerSight(WorldObject worldObject) {
-        client.onWorldObjectAddPlayerSight(worldObject);
+    public void onWorldObjectJoinsPlayerViewPort(WorldObject worldObject) {
+        client.onWorldObjectJoinsPlayerViewPort(worldObject);
     }
 }

@@ -16,11 +16,11 @@ public class World {
     private List<Monster> monsters;
     private List<Terrain> map;
 
-    public boolean checkHavePlayersInGame() {
+    public boolean containsPlayers() {
         return false;
     }
 
-    public boolean isAliveMonsterAmountReachTheUpperLimitInMap() {
+    public boolean isFullMonstersInMap() {
         return false;
     }
 

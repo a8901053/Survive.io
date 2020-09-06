@@ -19,9 +19,9 @@ public interface Client {
 
     void onMoveRightward(Role role);
 
-    void onInjury(Role role, int damage);
+    void onInjured(Role role, int damage);
 
-    void onThrowWeapon(Weapon weapon);
+    void onThrowCurrentWeapon(Weapon weapon);
 
     void onSwitchWeapon(Role role);
 
@@ -35,6 +35,6 @@ public interface Client {
 
     void onDead(Role role);
 
-    void onWorldObjectAddPlayerSight(WorldObject worldObject);
+    void onWorldObjectJoinsPlayerViewPort(WorldObject worldObject);
 
 }

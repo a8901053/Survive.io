@@ -21,7 +21,7 @@ public class GameController {
 
     }
 
-    public void useWeapon(int playerId, float angle) {
+    public void useWeapon(int playerId) {
 
     }
 
@@ -29,7 +29,7 @@ public class GameController {
 
     }
 
-    public void switchWeapon(int playerId) {
+    public void switchWeapon(int playerId, int weaponIndex) {
 
     }
 
@@ -37,7 +37,7 @@ public class GameController {
 
     }
 
-    public void pickUpItemFromFloor(int playerId) {
+    public void pickUpItem(int playerId) {
 
     }
 
@@ -45,7 +45,7 @@ public class GameController {
 
     }
 
-    public void throwWeapon(int playerId) {
+    public void throwCurrentWeapon(int playerId) {
 
     }
 
