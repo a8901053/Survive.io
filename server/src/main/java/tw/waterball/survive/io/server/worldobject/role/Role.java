@@ -46,11 +46,11 @@ public abstract class Role extends WorldObject {
 
 	}
 
-	public void switchWeapon() {
+	public void switchWeapon(int weaponIndex) {
 
 	}
 
-	public void injury(Role attackRole, int damage) {
+	public void injure(Role attackRole, int damage) {
 
 	}
 
@@ -70,7 +70,7 @@ public abstract class Role extends WorldObject {
 
 	}
 
-	public void throwWeapon() {
+	public void throwCurrentWeapon() {
 
 	}
 

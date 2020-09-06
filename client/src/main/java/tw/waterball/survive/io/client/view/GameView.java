@@ -11,65 +11,35 @@ public abstract class GameView {
     private State state;
     private PlayerController playerController;
 
-    public void launch() {
+    public abstract void launch();
 
-    }
+    public abstract void onRender(Sprite... sprites);
 
-    public void onRender(Sprite... sprites) {
+    public abstract void onWeaponUsed(WeaponSprite weaponSprite);
 
-    }
+    public abstract void onPlayerLoginSuccessfully();
 
-    public void onWeaponUsed(WeaponSprite weaponSprite) {
+    public abstract void onPlayerNameExists();
 
-    }
+    public abstract void onNoBulletsToReload();
 
-    public void onPlayerLoginSuccessfully() {
+    public abstract void onMagazineIsFull();
 
-    }
+    public abstract void onPickUpWeapon(RoleSprite roleSprite);
 
-    public void onPlayerNameExists() {
+    public abstract void onThrowWeapon(RoleSprite roleSprite);
 
-    }
+    public abstract void onInjured(RoleSprite roleSprite, int damage);
 
-    public void onNoBulletToReload() {
+    public abstract void onSwitchWeapon(RoleSprite roleSprite);
 
-    }
+    public abstract void onReload(RoleSprite roleSprite);
 
-    public void onMagazineIsFull() {
+    public abstract void onDead(RoleSprite roleSprite);
 
-    }
+    public abstract void onMove(RoleSprite roleSprite);
 
-    public void onPickUpWeapon(RoleSprite roleSprite) {
-
-    }
-
-    public void onThrowWeapon(RoleSprite roleSprite) {
-
-    }
-
-    public void onInjury(RoleSprite roleSprite, int damage) {
-
-    }
-
-    public void onSwitchWeapon(RoleSprite roleSprite) {
-
-    }
-
-    public void onReload(RoleSprite roleSprite) {
-
-    }
-
-    public void onDead(RoleSprite roleSprite) {
-
-    }
-
-    public void onMove(RoleSprite roleSprite) {
-
-    }
-
-    public void onTurn(RoleSprite roleSprite) {
-
-    }
+    public abstract void onTurn(RoleSprite roleSprite);
 
 
 }
