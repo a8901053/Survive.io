@@ -1,53 +1,54 @@
 package tw.waterball.survive.io.client.clients;
 
 public class ServerAdapter implements Server {
-	@Override
-	public void attack() {
 
-	}
+    @Override
+    public void useWeapon(int playerId) {
 
-	@Override
-	public void reload() {
+    }
 
-	}
+    @Override
+    public void reload(int playerId) {
 
-	@Override
-	public void turn(float angle) {
+    }
 
-	}
+    @Override
+    public void turn(int playerId, float angle) {
 
-	@Override
-	public void moveForward() {
+    }
 
-	}
+    @Override
+    public void moveForward(int playerId) {
 
-	@Override
-	public void moveLeftward() {
+    }
 
-	}
+    @Override
+    public void moveLeftward(int playerId) {
 
-	@Override
-	public void moveRightward() {
+    }
 
-	}
+    @Override
+    public void moveRightward(int playerId) {
 
-	@Override
-	public void moveBackward() {
+    }
 
-	}
+    @Override
+    public void moveBackward(int playerId) {
 
-	@Override
-	public void pickUpWeapon() {
+    }
 
-	}
+    @Override
+    public void pickUpWeapon(int playerId) {
 
-	@Override
-	public void playerThrowWeapon() {
+    }
 
-	}
+    @Override
+    public void playerThrowWeapon(int playerId) {
 
-	@Override
-	public void switchWeapon() {
+    }
 
-	}
+    @Override
+    public void switchWeapon(int playerId) {
+
+    }
 }

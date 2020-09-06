@@ -1,6 +1,6 @@
 package tw.waterball.survive.io.server.controller;
 
-import tw.waterball.survive.io.domain.model.World;
+import tw.waterball.survive.io.server.world.World;
 
 public class GameController {
     private World world;
@@ -21,7 +21,7 @@ public class GameController {
 
     }
 
-    public void attack(int playerId, float angle) {
+    public void useWeapon(int playerId, float angle) {
 
     }
 

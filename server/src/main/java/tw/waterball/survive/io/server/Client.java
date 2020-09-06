@@ -1,17 +1,25 @@
 package tw.waterball.survive.io.server;
 
-import tw.waterball.survive.io.domain.model.gameobject.GameObject;
-import tw.waterball.survive.io.domain.model.gameobject.role.Player;
-import tw.waterball.survive.io.domain.model.gameobject.role.Role;
-import tw.waterball.survive.io.domain.model.gameobject.weapon.Weapon;
+import tw.waterball.survive.io.server.worldobject.WorldObject;
+import tw.waterball.survive.io.server.worldobject.role.Player;
+import tw.waterball.survive.io.server.worldobject.role.Role;
+import tw.waterball.survive.io.server.worldobject.weapon.Weapon;
 
 public interface Client {
 
-    void onLoginSuccess();
+    void onLoginSuccessfully();
 
     void onHeartBeat();
 
-    void onSufferJury(Role role, int damage);
+    void onMoveForward(Role role);
+
+    void onMoveBackward(Role role);
+
+    void onMoveLeftward(Role role);
+
+    void onMoveRightward(Role role);
+
+    void onInjury(Role role, int damage);
 
     void onThrowWeapon(Weapon weapon);
 
@@ -19,7 +27,7 @@ public interface Client {
 
     void onReload(Role role);
 
-    void onAttack(Role role);
+    void onWeaponUsed(Role role);
 
     void onPickUpWeapon(Player player, Weapon weapon);
 
@@ -27,6 +35,6 @@ public interface Client {
 
     void onDead(Role role);
 
-    void onUpdate(GameObject gameObject);
+    void onWorldObjectAddPlayerSight(WorldObject worldObject);
 
 }
