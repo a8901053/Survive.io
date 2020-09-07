@@ -6,6 +6,8 @@ import tw.waterball.survive.io.client.sprite.Sprite;
 import tw.waterball.survive.io.client.sprite.role.RoleSprite;
 import tw.waterball.survive.io.client.sprite.weapon.WeaponSprite;
 
+import java.util.List;
+
 
 public abstract class GameView {
     private State state;
@@ -13,7 +15,7 @@ public abstract class GameView {
 
     public abstract void launch();
 
-    public abstract void onRender(Sprite... sprites);
+    public abstract void onRender(List<Sprite> sprites);
 
     public abstract void onWeaponUsed(WeaponSprite weaponSprite);
 

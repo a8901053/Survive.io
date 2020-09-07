@@ -4,6 +4,8 @@ import tw.waterball.survive.io.client.sprite.Sprite;
 import tw.waterball.survive.io.client.sprite.role.RoleSprite;
 import tw.waterball.survive.io.client.sprite.weapon.WeaponSprite;
 
+import java.util.List;
+
 public class StandardGameView extends GameView {
 
     @Override
@@ -12,7 +14,7 @@ public class StandardGameView extends GameView {
     }
 
     @Override
-    public void onRender(Sprite... sprites) {
+    public void onRender(List<Sprite> sprites) {
 
     }
 

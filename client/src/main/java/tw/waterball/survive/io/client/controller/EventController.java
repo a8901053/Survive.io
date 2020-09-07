@@ -5,6 +5,7 @@ import tw.waterball.survive.io.client.sprite.Sprite;
 import tw.waterball.survive.io.client.view.GameView;
 
 public class EventController {
+
     private SpriteContainer spriteContainer;
     private SpritePrototypeFactory spritePrototypeFactory;
     private GameView gameView;
