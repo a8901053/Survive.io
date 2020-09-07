@@ -1,52 +1,58 @@
 package tw.waterball.survive.io.server.controller;
 
+import tw.waterball.survive.io.router.protocol.api.ServerApi;
 import tw.waterball.survive.io.server.world.World;
 
-public class GameController {
+public class GameController implements ServerApi {
     private World world;
 
-    public void moveForward(int playerId) {
-
-    }
-
-    public void moveBackward(int playerId) {
-
-    }
-
-    public void moveLeftward(int playerId) {
-
-    }
-
-    public void moveRightward(int playerId) {
-
-    }
-
+    @Override
     public void useWeapon(int playerId) {
 
     }
 
-    public void addNewPlayer(String playerName) {
-
-    }
-
-    public void switchWeapon(int playerId, int weaponIndex) {
-
-    }
-
+    @Override
     public void reload(int playerId) {
 
     }
 
-    public void pickUpItem(int playerId) {
+    @Override
+    public void turn(int playerId, float angle) {
 
     }
 
-    public void playerTurn(float angle) {
+    @Override
+    public void moveForward(int playerId) {
 
     }
 
-    public void throwCurrentWeapon(int playerId) {
+    @Override
+    public void moveLeftward(int playerId) {
 
     }
 
+    @Override
+    public void moveRightward(int playerId) {
+
+    }
+
+    @Override
+    public void moveBackward(int playerId) {
+
+    }
+
+    @Override
+    public void pickUpWeapon(int playerId, int weaponId) {
+
+    }
+
+    @Override
+    public void playerCurrentThrowWeapon(int playerId, int currentWeaponId) {
+
+    }
+
+    @Override
+    public void switchWeapon(int playerId, int weaponSlotIndex) {
+
+    }
 }

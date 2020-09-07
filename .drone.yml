@@ -2,8 +2,8 @@ kind: pipeline
 name: default
 
 steps:
-- name: test
-  image: maven:3-jdk-8
-  commands:
-  - mvn test -B
+  - name: test
+    image: maven:3-jdk-8
+    commands:
+      - mvn test -B
 

@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SpriteContainer {
-
     private List<Sprite> sprites = new ArrayList<>();
 
     public void addSprite(Sprite sprite) {
