@@ -7,6 +7,6 @@ assignees: ''
 
 ---
 
-- Description 
+# Description 
 
-- Acceptance Criteria
+# Acceptance Criteria
