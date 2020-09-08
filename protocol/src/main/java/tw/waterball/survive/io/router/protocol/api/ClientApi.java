@@ -1,9 +1,11 @@
 package tw.waterball.survive.io.router.protocol.api;
 
 
+import java.util.List;
+
 public interface ClientApi extends Api {
 
-    void onLoginSuccessfully(byte[] map, byte[] player);
+    void onLoginSuccessfully(List<Object> map, List<Object> playersInViewPort, Object player);
 
     void onHeartBeat();
 
@@ -31,5 +33,6 @@ public interface ClientApi extends Api {
 
     void onDead(int id);
 
-    void onWorldObjectJoinsPlayerViewPort(byte[] worldObject);
+    void onWorldObjectJoinsPlayerViewPort(Object worldObject);
+
 }

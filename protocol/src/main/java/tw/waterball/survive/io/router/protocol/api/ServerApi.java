@@ -22,4 +22,6 @@ public interface ServerApi extends Api {
 
     void switchWeapon(int playerId, int weaponSlotIndex);
 
+    void login(String playerName);
+
 }

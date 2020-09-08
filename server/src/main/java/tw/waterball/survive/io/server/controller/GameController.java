@@ -55,4 +55,9 @@ public class GameController implements ServerApi {
     public void switchWeapon(int playerId, int weaponSlotIndex) {
 
     }
+
+    @Override
+    public void login(String playerName) {
+
+    }
 }
