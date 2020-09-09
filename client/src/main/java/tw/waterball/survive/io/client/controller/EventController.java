@@ -1,8 +1,11 @@
 package tw.waterball.survive.io.client.controller;
 
+import tw.waterball.survive.io.api.api.ClientApi;
+import tw.waterball.survive.io.api.dto.RoleDTO;
+import tw.waterball.survive.io.api.dto.TerrainDTO;
+import tw.waterball.survive.io.api.dto.event.*;
 import tw.waterball.survive.io.client.prototypefactory.SpritePrototypeFactory;
 import tw.waterball.survive.io.client.view.GameView;
-import tw.waterball.survive.io.router.protocol.api.ClientApi;
 
 import java.util.List;
 
@@ -12,7 +15,7 @@ public class EventController implements ClientApi {
     private GameView gameView;
 
     @Override
-    public void onLoginSuccessfully(List<Object> map, List<Object> playersInViewPort, Object player) {
+    public void onLoginSuccessfully(RoleDTO loginPlayerDTO) {
 
     }
 
@@ -22,67 +25,67 @@ public class EventController implements ClientApi {
     }
 
     @Override
-    public void onMoveForward(int roleId, int roleY) {
+    public void onMapLoaded(List<TerrainDTO> terrainDTOs) {
 
     }
 
     @Override
-    public void onMoveBackward(int roleId, int roleY) {
+    public void onMoveForward(MoveForwardEvent moveForwardEvent) {
 
     }
 
     @Override
-    public void onMoveLeftward(int roleId, int roleX) {
+    public void onMoveBackward(MoveBackwardEvent moveBackwardEvent) {
 
     }
 
     @Override
-    public void onMoveRightward(int roleId, int roleX) {
+    public void onMoveLeftward(MoveLeftwardEvent moveLeftwardEvent) {
 
     }
 
     @Override
-    public void onInjured(int id, int damage) {
+    public void onMoveRightward(MoveRightwardEvent moveRightwardEvent) {
 
     }
 
     @Override
-    public void onThrowCurrentWeapon(int roleId, int currentWeaponId) {
+    public void onInjured(InjuredEvent injuredEvent) {
 
     }
 
     @Override
-    public void onSwitchWeapon(int roleId, int weaponSlotIndex) {
+    public void onThrowCurrentWeapon(ThrowCurrentWeaponEvent throwCurrentWeaponEvent) {
 
     }
 
     @Override
-    public void onReload(int roleId) {
+    public void onSwitchWeapon(SwitchWeaponEvent switchWeaponEvent) {
 
     }
 
     @Override
-    public void onWeaponUsed(int roleId) {
+    public void onReload(ReloadEvent reloadEvent) {
 
     }
 
     @Override
-    public void onPickUpWeapon(int roleId, int weaponId) {
+    public void onWeaponUsed(UseWeaponEvent useWeaponEvent) {
 
     }
 
     @Override
-    public void onTurn(int roleId, float angle) {
+    public void onPickUpWeapon(PickUpWeaponEvent pickUpWeaponEvent) {
 
     }
 
     @Override
-    public void onDead(int id) {
+    public void onTurn(TurnEvent turnEvent) {
 
     }
 
     @Override
-    public void onWorldObjectJoinsPlayerViewPort(Object worldObject) {
+    public void onDead(DeadEvent deadEvent) {
 
     }
 }

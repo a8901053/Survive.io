@@ -1,63 +1,64 @@
 package tw.waterball.survive.io.server.controller;
 
-import tw.waterball.survive.io.router.protocol.api.ServerApi;
+import tw.waterball.survive.io.api.api.ServerApi;
+import tw.waterball.survive.io.api.dto.request.*;
 import tw.waterball.survive.io.server.world.World;
 
 public class GameController implements ServerApi {
     private World world;
 
     @Override
-    public void useWeapon(int playerId) {
+    public void useWeapon(UseWeaponRequest useWeaponRequest) {
 
     }
 
     @Override
-    public void reload(int playerId) {
+    public void reload(ReloadRequest reloadRequest) {
 
     }
 
     @Override
-    public void turn(int playerId, float angle) {
+    public void turn(TurnRequest turnRequest) {
 
     }
 
     @Override
-    public void moveForward(int playerId) {
+    public void moveForward(MoveForwardRequest moveForwardRequest) {
 
     }
 
     @Override
-    public void moveLeftward(int playerId) {
+    public void moveLeftward(MoveLeftwardRequest moveLeftwardRequest) {
 
     }
 
     @Override
-    public void moveRightward(int playerId) {
+    public void moveRightward(MoveRightwardRequest moveRightwardRequest) {
 
     }
 
     @Override
-    public void moveBackward(int playerId) {
+    public void moveBackward(MoveBackwardRequest moveBackwardRequest) {
 
     }
 
     @Override
-    public void pickUpWeapon(int playerId, int weaponId) {
+    public void pickUpWeapon(PickUpWeaponRequest pickUpWeaponRequest) {
 
     }
 
     @Override
-    public void playerCurrentThrowWeapon(int playerId, int currentWeaponId) {
+    public void playerThrowCurrentWeapon(ThrowCurrentWeaponRequest throwCurrentWeaponRequest) {
 
     }
 
     @Override
-    public void switchWeapon(int playerId, int weaponSlotIndex) {
+    public void switchWeapon(SwitchWeaponRequest switchWeaponRequest) {
 
     }
 
     @Override
-    public void login(String playerName) {
+    public void login(LoginRequest loginRequest) {
 
     }
 }

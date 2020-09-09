@@ -1,4 +1,4 @@
-package tw.waterball.survive.io.router.protocol.router;
+package tw.waterball.survive.io.protocol.router;
 
 public interface Router {
 

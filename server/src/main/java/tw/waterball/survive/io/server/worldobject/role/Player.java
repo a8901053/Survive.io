@@ -1,7 +1,10 @@
 package tw.waterball.survive.io.server.worldobject.role;
 
 
-import tw.waterball.survive.io.router.protocol.api.ClientApi;
+import tw.waterball.survive.io.api.api.ClientApi;
+import tw.waterball.survive.io.api.dto.RoleDTO;
+import tw.waterball.survive.io.api.dto.TerrainDTO;
+import tw.waterball.survive.io.api.dto.event.*;
 
 import java.util.List;
 
@@ -17,8 +20,8 @@ public class Player extends Role implements ClientApi {
     }
 
     @Override
-    public void onLoginSuccessfully(List<Object> map, List<Object> playersInViewPort, Object player) {
-        clientApi.onLoginSuccessfully(map, playersInViewPort, player);
+    public void onLoginSuccessfully(RoleDTO loginPlayerDTO) {
+        clientApi.onLoginSuccessfully(loginPlayerDTO);
     }
 
     @Override
@@ -27,67 +30,68 @@ public class Player extends Role implements ClientApi {
     }
 
     @Override
-    public void onMoveForward(int roleId, int roleY) {
-        clientApi.onMoveForward(roleId, roleY);
+    public void onMapLoaded(List<TerrainDTO> terrainDTOs) {
+        clientApi.onMapLoaded(terrainDTOs);
     }
 
     @Override
-    public void onMoveBackward(int roleId, int roleY) {
-        clientApi.onMoveBackward(roleId, roleY);
+    public void onMoveForward(MoveForwardEvent moveForwardEvent) {
+        clientApi.onMoveForward(moveForwardEvent);
     }
 
     @Override
-    public void onMoveLeftward(int roleId, int roleX) {
-        clientApi.onMoveLeftward(roleId, roleX);
+    public void onMoveBackward(MoveBackwardEvent moveBackwardEvent) {
+        clientApi.onMoveBackward(moveBackwardEvent);
     }
 
     @Override
-    public void onMoveRightward(int roleId, int roleX) {
-        clientApi.onMoveRightward(roleId, roleX);
+    public void onMoveLeftward(MoveLeftwardEvent moveLeftwardEvent) {
+        clientApi.onMoveLeftward(moveLeftwardEvent);
     }
 
     @Override
-    public void onInjured(int id, int damage) {
-        clientApi.onInjured(id, damage);
+    public void onMoveRightward(MoveRightwardEvent moveRightwardEvent) {
+        clientApi.onMoveRightward(moveRightwardEvent);
     }
 
     @Override
-    public void onThrowCurrentWeapon(int roleId, int currentWeaponId) {
-        clientApi.onThrowCurrentWeapon(roleId, currentWeaponId);
+    public void onInjured(InjuredEvent injuredEvent) {
+        clientApi.onInjured(injuredEvent);
     }
 
     @Override
-    public void onSwitchWeapon(int roleId, int weaponSlotIndex) {
-        clientApi.onSwitchWeapon(roleId, weaponSlotIndex);
+    public void onThrowCurrentWeapon(ThrowCurrentWeaponEvent throwCurrentWeaponEvent) {
+        clientApi.onThrowCurrentWeapon(throwCurrentWeaponEvent);
     }
 
     @Override
-    public void onReload(int roleId) {
-        clientApi.onReload(roleId);
+    public void onSwitchWeapon(SwitchWeaponEvent switchWeaponEvent) {
+        clientApi.onSwitchWeapon(switchWeaponEvent);
     }
 
     @Override
-    public void onWeaponUsed(int roleId) {
-        clientApi.onWeaponUsed(roleId);
+    public void onReload(ReloadEvent reloadEvent) {
+        clientApi.onReload(reloadEvent);
     }
 
     @Override
-    public void onPickUpWeapon(int roleId, int weaponId) {
-        clientApi.onPickUpWeapon(roleId, weaponId);
+    public void onWeaponUsed(UseWeaponEvent useWeaponEvent) {
+        clientApi.onWeaponUsed(useWeaponEvent);
     }
 
     @Override
-    public void onTurn(int roleId, float angle) {
-        clientApi.onTurn(roleId, angle);
+    public void onPickUpWeapon(PickUpWeaponEvent pickUpWeaponEvent) {
+        clientApi.onPickUpWeapon(pickUpWeaponEvent);
     }
 
     @Override
-    public void onDead(int id) {
-        clientApi.onDead(id);
+    public void onTurn(TurnEvent turnEvent) {
+        clientApi.onTurn(turnEvent);
     }
 
     @Override
-    public void onWorldObjectJoinsPlayerViewPort(Object worldObject) {
-        clientApi.onWorldObjectJoinsPlayerViewPort(worldObject);
+    public void onDead(DeadEvent deadEvent) {
+        clientApi.onDead(deadEvent);
     }
+
 }

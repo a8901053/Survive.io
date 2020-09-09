@@ -9,10 +9,8 @@
         <module name="client" />
         <module name="server" />
         <module name="protocol" />
+        <module name="api" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="router" target="8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

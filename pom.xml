@@ -24,5 +24,14 @@
         <module>protocol</module>
         <module>client</module>
         <module>server</module>
+        <module>api</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.12</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
 </project>

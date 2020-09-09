@@ -1,6 +1,6 @@
 package tw.waterball.survive.io.client.clients;
 
-import tw.waterball.survive.io.router.protocol.router.Router;
+import tw.waterball.survive.io.protocol.router.Router;
 
 public class Client {
     private final int serverPort = 8888;
