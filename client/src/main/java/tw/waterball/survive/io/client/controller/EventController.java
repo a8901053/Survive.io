@@ -1,53 +1,91 @@
 package tw.waterball.survive.io.client.controller;
 
+import tw.waterball.survive.io.api.api.ClientApi;
+import tw.waterball.survive.io.api.dto.RoleDTO;
+import tw.waterball.survive.io.api.dto.TerrainDTO;
+import tw.waterball.survive.io.api.dto.event.*;
 import tw.waterball.survive.io.client.prototypefactory.SpritePrototypeFactory;
-import tw.waterball.survive.io.client.sprite.Sprite;
 import tw.waterball.survive.io.client.view.GameView;
 
-public class EventController {
+import java.util.List;
 
+public class EventController implements ClientApi {
     private SpriteContainer spriteContainer;
     private SpritePrototypeFactory spritePrototypeFactory;
     private GameView gameView;
 
-    public void onSufferingInjury(int id, int damage) {
+    @Override
+    public void onLoginSuccessfully(RoleDTO loginPlayerDTO) {
 
     }
 
-    public void onThrowWeapon(int weaponId) {
+    @Override
+    public void onHeartBeat() {
 
     }
 
-    public void onSwitchWeapon(int roleId) {
+    @Override
+    public void onMapLoaded(List<TerrainDTO> terrainDTOs) {
 
     }
 
-    public void onReload(int roleId) {
+    @Override
+    public void onMoveForward(MoveForwardEvent moveForwardEvent) {
 
     }
 
-    public void onWeaponUsed(int roleId) {
+    @Override
+    public void onMoveBackward(MoveBackwardEvent moveBackwardEvent) {
 
     }
 
-    public void onPickUpWeapon(int roleId, int weaponId) {
+    @Override
+    public void onMoveLeftward(MoveLeftwardEvent moveLeftwardEvent) {
 
     }
 
-    public void onTurn(int roleId, float angle) {
+    @Override
+    public void onMoveRightward(MoveRightwardEvent moveRightwardEvent) {
 
     }
 
-    public void onDead(int id) {
+    @Override
+    public void onInjured(InjuredEvent injuredEvent) {
 
     }
 
-    public void onSpriteJoinsPlayerViewPort(Sprite sprite) {
+    @Override
+    public void onThrowCurrentWeapon(ThrowCurrentWeaponEvent throwCurrentWeaponEvent) {
 
     }
 
-    public void onPlayerLoginSuccessfully() {
+    @Override
+    public void onSwitchWeapon(SwitchWeaponEvent switchWeaponEvent) {
 
     }
 
+    @Override
+    public void onReload(ReloadEvent reloadEvent) {
+
+    }
+
+    @Override
+    public void onWeaponUsed(UseWeaponEvent useWeaponEvent) {
+
+    }
+
+    @Override
+    public void onPickUpWeapon(PickUpWeaponEvent pickUpWeaponEvent) {
+
+    }
+
+    @Override
+    public void onTurn(TurnEvent turnEvent) {
+
+    }
+
+    @Override
+    public void onDead(DeadEvent deadEvent) {
+
+    }
 }

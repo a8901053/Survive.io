@@ -1,52 +1,64 @@
 package tw.waterball.survive.io.server.controller;
 
+import tw.waterball.survive.io.api.api.ServerApi;
+import tw.waterball.survive.io.api.dto.request.*;
 import tw.waterball.survive.io.server.world.World;
 
-public class GameController {
+public class GameController implements ServerApi {
     private World world;
 
-    public void moveForward(int playerId) {
+    @Override
+    public void useWeapon(UseWeaponRequest useWeaponRequest) {
 
     }
 
-    public void moveBackward(int playerId) {
+    @Override
+    public void reload(ReloadRequest reloadRequest) {
 
     }
 
-    public void moveLeftward(int playerId) {
+    @Override
+    public void turn(TurnRequest turnRequest) {
 
     }
 
-    public void moveRightward(int playerId) {
+    @Override
+    public void moveForward(MoveForwardRequest moveForwardRequest) {
 
     }
 
-    public void useWeapon(int playerId) {
+    @Override
+    public void moveLeftward(MoveLeftwardRequest moveLeftwardRequest) {
 
     }
 
-    public void addNewPlayer(String playerName) {
+    @Override
+    public void moveRightward(MoveRightwardRequest moveRightwardRequest) {
 
     }
 
-    public void switchWeapon(int playerId, int weaponIndex) {
+    @Override
+    public void moveBackward(MoveBackwardRequest moveBackwardRequest) {
 
     }
 
-    public void reload(int playerId) {
+    @Override
+    public void pickUpWeapon(PickUpWeaponRequest pickUpWeaponRequest) {
 
     }
 
-    public void pickUpItem(int playerId) {
+    @Override
+    public void playerThrowCurrentWeapon(ThrowCurrentWeaponRequest throwCurrentWeaponRequest) {
 
     }
 
-    public void playerTurn(float angle) {
+    @Override
+    public void switchWeapon(SwitchWeaponRequest switchWeaponRequest) {
 
     }
 
-    public void throwCurrentWeapon(int playerId) {
+    @Override
+    public void login(LoginRequest loginRequest) {
 
     }
-
 }

@@ -1,19 +1,17 @@
 package tw.waterball.survive.io.client.clients;
 
-
-import tw.waterball.survive.io.router.Router;
+import tw.waterball.survive.io.protocol.router.Router;
 
 public class Client {
-	private String serverIP;
-	private int serverPort;
-	private Router router;
+    private final int serverPort = 8888;
+    private String serverIP;
+    private Router router;
 
-	public void start() {
+    public void start() {
 
-	}
+    }
 
-	public void read() {
+    public void read() {
 
-	}
-
+    }
 }

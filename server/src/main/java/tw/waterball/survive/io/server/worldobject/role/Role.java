@@ -8,70 +8,62 @@ import tw.waterball.survive.io.server.worldobject.weapon.WeaponSlot;
 import java.util.List;
 
 public abstract class Role extends WorldObject {
-	private String name;
-	private int money;
-	private int speed;
-	private int def;
-	private int hp;
-	private int maxHp;
-	private List<WeaponSlot> weaponSlots;
-	private List<Magazine> magazines;
-	private WeaponSlot currentWeaponSlot;
+    private String name;
+    private int money;
+    private int speed;
+    private int def;
+    private int hp;
+    private int maxHp;
+    private List<WeaponSlot> weaponSlots;
+    private List<Magazine> magazines;
+    private WeaponSlot currentWeaponSlot;
 
-	public void turn(float angle) {
+    public void turn(float angle) {
 
-	}
+    }
 
-	public void moveBackward() {
+    public void moveBackward() {
 
-	}
+    }
 
-	public void moveForward() {
+    public void moveForward() {
 
-	}
+    }
 
-	public void moveLeftward() {
+    public void moveLeftward() {
 
-	}
+    }
 
-	public void moveRightward() {
+    public void moveRightward() {
 
-	}
+    }
 
-	public void reload() {
+    public void reload() {
 
-	}
+    }
 
-	public void useWeapon() {
+    public void useWeapon() {
 
-	}
+    }
 
-	public void switchWeapon(int weaponIndex) {
+    public void switchWeapon(int weaponIndex) {
 
-	}
+    }
 
-	public void injure(Role attackRole, int damage) {
+    public void injure(Role attackRole, int damage) {
 
-	}
+    }
 
-	public boolean isDead() {
-		return false;
-	}
+    public boolean isDead() {
+        return false;
+    }
 
-	public void giveAttackerMoney(Role attackRole) {
+    public void setCurrentWeapon(Weapon weapon) {
 
-	}
+    }
 
-	public void dropRoleWeapon() {
+    public void throwCurrentWeapon() {
 
-	}
-
-	public void setCurrentWeapon(Weapon weapon) {
-
-	}
-
-	public void throwCurrentWeapon() {
-
-	}
+    }
 
 }

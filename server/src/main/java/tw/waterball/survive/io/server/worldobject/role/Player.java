@@ -1,89 +1,97 @@
 package tw.waterball.survive.io.server.worldobject.role;
 
-import tw.waterball.survive.io.server.Client;
-import tw.waterball.survive.io.server.ClientSocketAdapter;
-import tw.waterball.survive.io.server.worldobject.WorldObject;
-import tw.waterball.survive.io.server.worldobject.weapon.Weapon;
 
-public class Player extends Role implements Client {
-    private final Client client = new ClientSocketAdapter();
+import tw.waterball.survive.io.api.api.ClientApi;
+import tw.waterball.survive.io.api.dto.RoleDTO;
+import tw.waterball.survive.io.api.dto.TerrainDTO;
+import tw.waterball.survive.io.api.dto.event.*;
+
+import java.util.List;
+
+public class Player extends Role implements ClientApi {
+    private final ClientApi clientApi;
+
+    public Player(ClientApi clientApi) {
+        this.clientApi = clientApi;
+    }
 
     public void reload() {
 
     }
 
     @Override
-    public void onLoginSuccessfully() {
-        client.onLoginSuccessfully();
+    public void onLoginSuccessfully(RoleDTO loginPlayerDTO) {
+        clientApi.onLoginSuccessfully(loginPlayerDTO);
     }
 
     @Override
     public void onHeartBeat() {
-        client.onHeartBeat();
+        clientApi.onHeartBeat();
     }
 
     @Override
-    public void onMoveForward(Role role) {
-        client.onMoveForward(role);
+    public void onMapLoaded(List<TerrainDTO> terrainDTOs) {
+        clientApi.onMapLoaded(terrainDTOs);
     }
 
     @Override
-    public void onMoveBackward(Role role) {
-        client.onMoveBackward(role);
+    public void onMoveForward(MoveForwardEvent moveForwardEvent) {
+        clientApi.onMoveForward(moveForwardEvent);
     }
 
     @Override
-    public void onMoveLeftward(Role role) {
-        client.onMoveLeftward(role);
+    public void onMoveBackward(MoveBackwardEvent moveBackwardEvent) {
+        clientApi.onMoveBackward(moveBackwardEvent);
     }
 
     @Override
-    public void onMoveRightward(Role role) {
-        client.onMoveRightward(role);
+    public void onMoveLeftward(MoveLeftwardEvent moveLeftwardEvent) {
+        clientApi.onMoveLeftward(moveLeftwardEvent);
     }
 
     @Override
-    public void onInjured(Role role, int damage) {
-        client.onInjured(role, damage);
+    public void onMoveRightward(MoveRightwardEvent moveRightwardEvent) {
+        clientApi.onMoveRightward(moveRightwardEvent);
     }
 
     @Override
-    public void onThrowCurrentWeapon(Weapon weapon) {
-        client.onThrowCurrentWeapon(weapon);
+    public void onInjured(InjuredEvent injuredEvent) {
+        clientApi.onInjured(injuredEvent);
     }
 
     @Override
-    public void onSwitchWeapon(Role role) {
-        client.onSwitchWeapon(role);
+    public void onThrowCurrentWeapon(ThrowCurrentWeaponEvent throwCurrentWeaponEvent) {
+        clientApi.onThrowCurrentWeapon(throwCurrentWeaponEvent);
     }
 
     @Override
-    public void onReload(Role role) {
-        client.onReload(role);
+    public void onSwitchWeapon(SwitchWeaponEvent switchWeaponEvent) {
+        clientApi.onSwitchWeapon(switchWeaponEvent);
     }
 
     @Override
-    public void onWeaponUsed(Role role) {
-        client.onWeaponUsed(role);
+    public void onReload(ReloadEvent reloadEvent) {
+        clientApi.onReload(reloadEvent);
     }
 
     @Override
-    public void onPickUpWeapon(Player player, Weapon weapon) {
-        client.onPickUpWeapon(player, weapon);
+    public void onWeaponUsed(UseWeaponEvent useWeaponEvent) {
+        clientApi.onWeaponUsed(useWeaponEvent);
     }
 
     @Override
-    public void onTurn(Role role) {
-        client.onTurn(role);
+    public void onPickUpWeapon(PickUpWeaponEvent pickUpWeaponEvent) {
+        clientApi.onPickUpWeapon(pickUpWeaponEvent);
     }
 
     @Override
-    public void onDead(Role role) {
-        client.onDead(role);
+    public void onTurn(TurnEvent turnEvent) {
+        clientApi.onTurn(turnEvent);
     }
 
     @Override
-    public void onWorldObjectJoinsPlayerViewPort(WorldObject worldObject) {
-        client.onWorldObjectJoinsPlayerViewPort(worldObject);
+    public void onDead(DeadEvent deadEvent) {
+        clientApi.onDead(deadEvent);
     }
+
 }
