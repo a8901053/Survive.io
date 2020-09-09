@@ -42,6 +42,4 @@ public abstract class GameView {
     public abstract void onMove(RoleSprite roleSprite);
 
     public abstract void onTurn(RoleSprite roleSprite);
-
-
 }

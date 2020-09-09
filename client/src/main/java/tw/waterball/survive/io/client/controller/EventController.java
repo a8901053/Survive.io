@@ -88,4 +88,5 @@ public class EventController implements ClientApi {
     public void onDead(DeadEvent deadEvent) {
 
     }
+
 }
