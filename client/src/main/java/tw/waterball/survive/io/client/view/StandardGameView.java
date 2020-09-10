@@ -6,6 +6,9 @@ import tw.waterball.survive.io.client.sprite.weapon.WeaponSprite;
 
 import java.util.List;
 
+/**
+ * @author - c11037at@gmail.com
+ */
 public class StandardGameView extends GameView {
 
     @Override
@@ -83,3 +86,4 @@ public class StandardGameView extends GameView {
 
     }
 }
+

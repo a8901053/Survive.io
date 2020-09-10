@@ -13,5 +13,4 @@ public abstract class WeaponSprite extends Sprite {
     }
 
     public abstract void useWeapon();
-
 }
