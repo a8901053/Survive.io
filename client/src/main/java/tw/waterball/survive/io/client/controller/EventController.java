@@ -14,6 +14,7 @@ public class EventController implements ClientApi {
     private SpritePrototypeFactory spritePrototypeFactory;
     private GameView gameView;
 
+
     @Override
     public void onLoginSuccessfully(RoleDTO loginPlayerDTO) {
 
@@ -30,22 +31,22 @@ public class EventController implements ClientApi {
     }
 
     @Override
-    public void onMoveForward(MoveForwardEvent moveForwardEvent) {
+    public void onMoveUp(MoveUpEvent moveUpEventEvent) {
 
     }
 
     @Override
-    public void onMoveBackward(MoveBackwardEvent moveBackwardEvent) {
+    public void onMoveDown(MoveDownEvent moveDownEvent) {
 
     }
 
     @Override
-    public void onMoveLeftward(MoveLeftwardEvent moveLeftwardEvent) {
+    public void onMoveLeft(MoveLeftEvent moveLeftEvent) {
 
     }
 
     @Override
-    public void onMoveRightward(MoveRightwardEvent moveRightwardEvent) {
+    public void onMoveRight(MoveRightEvent moveRightEvent) {
 
     }
 
@@ -60,7 +61,7 @@ public class EventController implements ClientApi {
     }
 
     @Override
-    public void onSwitchWeapon(SwitchWeaponEvent switchWeaponEvent) {
+    public void onSwitchCurrentWeapon(SwitchCurrentWeaponEvent switchCurrentWeaponEvent) {
 
     }
 
@@ -80,7 +81,7 @@ public class EventController implements ClientApi {
     }
 
     @Override
-    public void onTurn(TurnEvent turnEvent) {
+    public void onTurnTo(TurnToEvent turnToEvent) {
 
     }
 

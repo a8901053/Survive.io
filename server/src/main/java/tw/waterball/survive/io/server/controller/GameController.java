@@ -7,6 +7,7 @@ import tw.waterball.survive.io.server.world.World;
 public class GameController implements ServerApi {
     private World world;
 
+
     @Override
     public void useWeapon(UseWeaponRequest useWeaponRequest) {
 
@@ -18,27 +19,27 @@ public class GameController implements ServerApi {
     }
 
     @Override
-    public void turn(TurnRequest turnRequest) {
+    public void turnTo(TurnToRequest turnToRequest) {
 
     }
 
     @Override
-    public void moveForward(MoveForwardRequest moveForwardRequest) {
+    public void moveUp(MoveUpRequest moveUpRequest) {
 
     }
 
     @Override
-    public void moveLeftward(MoveLeftwardRequest moveLeftwardRequest) {
+    public void moveLeft(MoveLeftRequest moveLeftRequest) {
 
     }
 
     @Override
-    public void moveRightward(MoveRightwardRequest moveRightwardRequest) {
+    public void moveRight(MoveRightRequest moveRightRequest) {
 
     }
 
     @Override
-    public void moveBackward(MoveBackwardRequest moveBackwardRequest) {
+    public void moveDown(MoveDownRequest moveDownRequest) {
 
     }
 
@@ -53,7 +54,7 @@ public class GameController implements ServerApi {
     }
 
     @Override
-    public void switchWeapon(SwitchWeaponRequest switchWeaponRequest) {
+    public void switchCurrentWeapon(SwitchCurrentWeaponRequest switchCurrentWeaponRequestWeaponRequest) {
 
     }
 

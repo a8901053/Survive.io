@@ -62,7 +62,7 @@ public class StandardGameView extends GameView {
     }
 
     @Override
-    public void onSwitchWeapon(RoleSprite roleSprite) {
+    public void onSwitchCurrentWeapon(RoleSprite roleSprite) {
 
     }
 

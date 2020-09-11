@@ -3,6 +3,6 @@ package tw.waterball.survive.io.api.dto.request;
 import lombok.Data;
 
 @Data
-public class MoveForwardRequest {
+public class MoveDownRequest {
     private int playerId;
 }

@@ -8,21 +8,21 @@ public interface ServerApi {
 
     void reload(ReloadRequest reloadRequest);
 
-    void turn(TurnRequest turnRequest);
+    void turnTo(TurnToRequest turnToRequest);
 
-    void moveForward(MoveForwardRequest moveForwardRequest);
+    void moveUp(MoveUpRequest moveUpRequest);
 
-    void moveLeftward(MoveLeftwardRequest moveLeftwardRequest);
+    void moveLeft(MoveLeftRequest moveLeftRequest);
 
-    void moveRightward(MoveRightwardRequest moveRightwardRequest);
+    void moveRight(MoveRightRequest moveRightRequest);
 
-    void moveBackward(MoveBackwardRequest moveBackwardRequest);
+    void moveDown(MoveDownRequest moveDownRequest);
 
     void pickUpWeapon(PickUpWeaponRequest pickUpWeaponRequest);
 
     void playerThrowCurrentWeapon(ThrowCurrentWeaponRequest throwCurrentWeaponRequest);
 
-    void switchWeapon(SwitchWeaponRequest switchWeaponRequest);
+    void switchCurrentWeapon(SwitchCurrentWeaponRequest switchCurrentWeaponRequestWeaponRequest);
 
     void login(LoginRequest loginRequest);
 

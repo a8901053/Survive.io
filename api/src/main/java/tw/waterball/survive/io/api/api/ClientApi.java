@@ -15,19 +15,19 @@ public interface ClientApi {
 
     void onMapLoaded(List<TerrainDTO> terrainDTOs);
 
-    void onMoveForward(MoveForwardEvent moveForwardEvent);
+    void onMoveUp(MoveUpEvent moveUpEventEvent);
 
-    void onMoveBackward(MoveBackwardEvent moveBackwardEvent);
+    void onMoveDown(MoveDownEvent moveDownEvent);
 
-    void onMoveLeftward(MoveLeftwardEvent moveLeftwardEvent);
+    void onMoveLeft(MoveLeftEvent moveLeftEvent);
 
-    void onMoveRightward(MoveRightwardEvent moveRightwardEvent);
+    void onMoveRight(MoveRightEvent moveRightEvent);
 
     void onInjured(InjuredEvent injuredEvent);
 
     void onThrowCurrentWeapon(ThrowCurrentWeaponEvent throwCurrentWeaponEvent);
 
-    void onSwitchWeapon(SwitchWeaponEvent switchWeaponEvent);
+    void onSwitchCurrentWeapon(SwitchCurrentWeaponEvent switchCurrentWeaponEvent);
 
     void onReload(ReloadEvent reloadEvent);
 
@@ -35,7 +35,7 @@ public interface ClientApi {
 
     void onPickUpWeapon(PickUpWeaponEvent pickUpWeaponEvent);
 
-    void onTurn(TurnEvent turnEvent);
+    void onTurnTo(TurnToEvent turnToEvent);
 
     void onDead(DeadEvent deadEvent);
 
