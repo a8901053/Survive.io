@@ -25,6 +25,7 @@
         <module>client</module>
         <module>server</module>
         <module>api</module>
+        <module>ioc</module>
     </modules>
     <dependencies>
         <dependency>
