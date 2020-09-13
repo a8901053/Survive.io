@@ -10,6 +10,7 @@
         <module name="server" />
         <module name="protocol" />
         <module name="api" />
+        <module name="ioc" />
       </profile>
     </annotationProcessing>
   </component>
