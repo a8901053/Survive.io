@@ -3,7 +3,7 @@ package tw.waterball.survive.io.api.dto.event;
 import lombok.Data;
 
 @Data
-public class MoveLeftwardEvent {
+public class RolePicksUpWeaponEvent {
     private int roleId;
-    private int roleX;
+    private int weaponId;
 }

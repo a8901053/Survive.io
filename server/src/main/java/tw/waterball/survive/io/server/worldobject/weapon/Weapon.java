@@ -7,11 +7,10 @@ public abstract class Weapon extends WorldObject {
     private WeaponName weaponName;
     private Role weaponHolder;
     private int damage;
-    private boolean isOnTheGround;
+
+    public Weapon(int weaponWidth, int weaponHeight) {
+        super(weaponWidth, weaponHeight);
+    }
 
     public abstract void useWeapon();
-
-    public void setOnTheGround(boolean onTheGround) {
-        isOnTheGround = onTheGround;
-    }
 }

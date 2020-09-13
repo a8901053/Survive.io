@@ -1,5 +1,6 @@
 package tw.waterball.survive.io.client.controller;
 
+
 import tw.waterball.survive.io.api.api.ServerApi;
 import tw.waterball.survive.io.client.sprite.role.PlayerSprite;
 import tw.waterball.survive.io.client.sprite.weapon.WeaponSprite;
@@ -13,39 +14,39 @@ public class PlayerController {
     private ServerApi serverApi;
 
 
-    public void playerUseWeapon() {
+    public void usePlayerWeapon() {
 
     }
 
-    public void playerReload() {
+    public void reloadPlayerGun() {
 
     }
 
-    public void playerTurn(float angle) {
+    public void turnPlayerAngleTo(float angle) {
 
     }
 
-    public void playerMoveForward() {
+    public void movePlayerUp() {
 
     }
 
-    public void playerMoveLeftward() {
+    public void movePlayerLeft() {
 
     }
 
-    public void playerMoveRightward() {
+    public void movePlayerRight() {
 
     }
 
-    public void playerMoveBackward() {
+    public void movePlayerDown() {
 
     }
 
-    public void playerThrowCurrentWeapon() {
+    public void throwPlayerCurrentWeapon() {
 
     }
 
-    public void playerSwitchWeapon(int weaponSlotIndex) {
+    public void switchPlayerCurrentWeapon(int weaponSlotIndex) {
 
     }
 

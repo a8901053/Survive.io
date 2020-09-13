@@ -7,36 +7,39 @@ import tw.waterball.survive.io.api.dto.event.*;
 
 import java.util.List;
 
+/**
+ * @author - a89010531111@gmail.com
+ */
 public interface ClientApi {
 
-    void onLoginSuccessfully(RoleDTO loginPlayerDTO);
+    void onPlayerLoginSuccessfully(RoleDTO loginPlayerDTO);
 
-    void onHeartBeat();
+    void onPlayerHeartBeat();
 
-    void onMapLoaded(List<TerrainDTO> terrainDTOs);
+    void onPlayerMapLoaded(List<TerrainDTO> terrainDTOs);
 
-    void onMoveForward(MoveForwardEvent moveForwardEvent);
+    void onRoleMovesUp(RoleMovesUpEvent event);
 
-    void onMoveBackward(MoveBackwardEvent moveBackwardEvent);
+    void onRoleMovesDown(RoleMovesDownEvent event);
 
-    void onMoveLeftward(MoveLeftwardEvent moveLeftwardEvent);
+    void onRoleMovesLeft(RoleMovesLeftEvent event);
 
-    void onMoveRightward(MoveRightwardEvent moveRightwardEvent);
+    void onRoleMovesRight(RoleMovesRightEvent event);
 
-    void onInjured(InjuredEvent injuredEvent);
+    void onRoleInjured(RoleInjuredEvent event);
 
-    void onThrowCurrentWeapon(ThrowCurrentWeaponEvent throwCurrentWeaponEvent);
+    void onRoleThrowsCurrentWeapon(RoleThrowsCurrentWeaponEvent event);
 
-    void onSwitchWeapon(SwitchWeaponEvent switchWeaponEvent);
+    void onRoleSwitchesCurrentWeapon(RoleSwitchesCurrentWeaponEvent event);
 
-    void onReload(ReloadEvent reloadEvent);
+    void onRoleReloadsGun(RoleReloadsGunEvent event);
 
-    void onWeaponUsed(UseWeaponEvent useWeaponEvent);
+    void onRoleWeaponUsed(RoleUsesWeaponEvent event);
 
-    void onPickUpWeapon(PickUpWeaponEvent pickUpWeaponEvent);
+    void onRolePicksUpWeapon(RolePicksUpWeaponEvent event);
 
-    void onTurn(TurnEvent turnEvent);
+    void onRoleTurnsAngleTo(RoleTurnsAngleToEvent event);
 
-    void onDead(DeadEvent deadEvent);
+    void onRoleDies(RoleDiesEvent event);
 
 }

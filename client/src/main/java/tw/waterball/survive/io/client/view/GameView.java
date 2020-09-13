@@ -33,7 +33,7 @@ public abstract class GameView {
 
     public abstract void onInjured(RoleSprite roleSprite, int damage);
 
-    public abstract void onSwitchWeapon(RoleSprite roleSprite);
+    public abstract void onSwitchCurrentWeapon(RoleSprite roleSprite);
 
     public abstract void onReload(RoleSprite roleSprite);
 

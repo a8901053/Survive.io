@@ -8,90 +8,90 @@ import tw.waterball.survive.io.api.dto.event.*;
 
 import java.util.List;
 
+/**
+ * @author - a89010531111@gmail.com
+ */
 public class Player extends Role implements ClientApi {
+    private final static int WEAPON_SLOTS_SIZE = 2;
     private final ClientApi clientApi;
 
-    public Player(ClientApi clientApi) {
+    public Player(int playerWidth, int playerHeight, ClientApi clientApi) {
+        super(WEAPON_SLOTS_SIZE, playerWidth, playerHeight);
         this.clientApi = clientApi;
     }
 
-    public void reload() {
-
+    @Override
+    public void onPlayerLoginSuccessfully(RoleDTO loginPlayerDTO) {
+        clientApi.onPlayerLoginSuccessfully(loginPlayerDTO);
     }
 
     @Override
-    public void onLoginSuccessfully(RoleDTO loginPlayerDTO) {
-        clientApi.onLoginSuccessfully(loginPlayerDTO);
+    public void onPlayerHeartBeat() {
+        clientApi.onPlayerHeartBeat();
     }
 
     @Override
-    public void onHeartBeat() {
-        clientApi.onHeartBeat();
+    public void onPlayerMapLoaded(List<TerrainDTO> terrainDTOs) {
+        clientApi.onPlayerMapLoaded(terrainDTOs);
     }
 
     @Override
-    public void onMapLoaded(List<TerrainDTO> terrainDTOs) {
-        clientApi.onMapLoaded(terrainDTOs);
+    public void onRoleMovesUp(RoleMovesUpEvent event) {
+        clientApi.onRoleMovesUp(event);
     }
 
     @Override
-    public void onMoveForward(MoveForwardEvent moveForwardEvent) {
-        clientApi.onMoveForward(moveForwardEvent);
+    public void onRoleMovesDown(RoleMovesDownEvent event) {
+        clientApi.onRoleMovesDown(event);
     }
 
     @Override
-    public void onMoveBackward(MoveBackwardEvent moveBackwardEvent) {
-        clientApi.onMoveBackward(moveBackwardEvent);
+    public void onRoleMovesLeft(RoleMovesLeftEvent event) {
+        clientApi.onRoleMovesLeft(event);
     }
 
     @Override
-    public void onMoveLeftward(MoveLeftwardEvent moveLeftwardEvent) {
-        clientApi.onMoveLeftward(moveLeftwardEvent);
+    public void onRoleMovesRight(RoleMovesRightEvent event) {
+        clientApi.onRoleMovesRight(event);
     }
 
     @Override
-    public void onMoveRightward(MoveRightwardEvent moveRightwardEvent) {
-        clientApi.onMoveRightward(moveRightwardEvent);
+    public void onRoleInjured(RoleInjuredEvent event) {
+        clientApi.onRoleInjured(event);
     }
 
     @Override
-    public void onInjured(InjuredEvent injuredEvent) {
-        clientApi.onInjured(injuredEvent);
+    public void onRoleThrowsCurrentWeapon(RoleThrowsCurrentWeaponEvent event) {
+        clientApi.onRoleThrowsCurrentWeapon(event);
     }
 
     @Override
-    public void onThrowCurrentWeapon(ThrowCurrentWeaponEvent throwCurrentWeaponEvent) {
-        clientApi.onThrowCurrentWeapon(throwCurrentWeaponEvent);
+    public void onRoleSwitchesCurrentWeapon(RoleSwitchesCurrentWeaponEvent event) {
+        clientApi.onRoleSwitchesCurrentWeapon(event);
     }
 
     @Override
-    public void onSwitchWeapon(SwitchWeaponEvent switchWeaponEvent) {
-        clientApi.onSwitchWeapon(switchWeaponEvent);
+    public void onRoleReloadsGun(RoleReloadsGunEvent event) {
+        clientApi.onRoleReloadsGun(event);
     }
 
     @Override
-    public void onReload(ReloadEvent reloadEvent) {
-        clientApi.onReload(reloadEvent);
+    public void onRoleWeaponUsed(RoleUsesWeaponEvent event) {
+        clientApi.onRoleWeaponUsed(event);
     }
 
     @Override
-    public void onWeaponUsed(UseWeaponEvent useWeaponEvent) {
-        clientApi.onWeaponUsed(useWeaponEvent);
+    public void onRolePicksUpWeapon(RolePicksUpWeaponEvent event) {
+        clientApi.onRolePicksUpWeapon(event);
     }
 
     @Override
-    public void onPickUpWeapon(PickUpWeaponEvent pickUpWeaponEvent) {
-        clientApi.onPickUpWeapon(pickUpWeaponEvent);
+    public void onRoleTurnsAngleTo(RoleTurnsAngleToEvent event) {
+        clientApi.onRoleTurnsAngleTo(event);
     }
 
     @Override
-    public void onTurn(TurnEvent turnEvent) {
-        clientApi.onTurn(turnEvent);
+    public void onRoleDies(RoleDiesEvent event) {
+        clientApi.onRoleDies(event);
     }
-
-    @Override
-    public void onDead(DeadEvent deadEvent) {
-        clientApi.onDead(deadEvent);
-    }
-
 }

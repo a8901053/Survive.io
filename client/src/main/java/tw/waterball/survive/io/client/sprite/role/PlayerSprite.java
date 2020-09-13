@@ -2,23 +2,23 @@ package tw.waterball.survive.io.client.sprite.role;
 
 public class PlayerSprite extends RoleSprite {
 
-    public void moveForward() {
+    public void moveUp() {
 
     }
 
-    public void moveBackward() {
+    public void moveDown() {
 
     }
 
-    public void moveLeftward() {
+    public void moveLeft() {
 
     }
 
-    public void moveRightward() {
+    public void moveRight() {
 
     }
 
-    public void turn(float angle) {
+    public void turnAngleTo(float angle) {
 
     }
 
