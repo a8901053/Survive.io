@@ -18,7 +18,7 @@ public class PlayerSprite extends RoleSprite {
 
     }
 
-    public void turnTo(float angle) {
+    public void turnAngleTo(float angle) {
 
     }
 

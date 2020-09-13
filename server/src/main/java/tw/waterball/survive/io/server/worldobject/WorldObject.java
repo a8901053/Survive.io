@@ -6,13 +6,13 @@ import java.awt.*;
 
 
 public abstract class WorldObject {
-    protected Rectangle body = new Rectangle(0, 0, 0, 0);
+    protected Rectangle body;
     protected World world;
     protected float angle;
     private int id;
 
-    public WorldObject() {
-
+    public WorldObject(int worldObjectWidth, int worldObjectHeight) {
+        this.body = new Rectangle(new Dimension(worldObjectWidth, worldObjectHeight));
     }
 
     public int getX() {

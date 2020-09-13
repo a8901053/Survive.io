@@ -16,78 +16,77 @@ public class EventController implements ClientApi {
 
 
     @Override
-    public void onLoginSuccessfully(RoleDTO loginPlayerDTO) {
+    public void onPlayerLoginSuccessfully(RoleDTO loginPlayerDTO) {
 
     }
 
     @Override
-    public void onHeartBeat() {
+    public void onPlayerHeartBeat() {
 
     }
 
     @Override
-    public void onMapLoaded(List<TerrainDTO> terrainDTOs) {
+    public void onPlayerMapLoaded(List<TerrainDTO> terrainDTOs) {
 
     }
 
     @Override
-    public void onMoveUp(MoveUpEvent moveUpEventEvent) {
+    public void onRoleMovesUp(RoleMovesUpEvent event) {
 
     }
 
     @Override
-    public void onMoveDown(MoveDownEvent moveDownEvent) {
+    public void onRoleMovesDown(RoleMovesDownEvent event) {
 
     }
 
     @Override
-    public void onMoveLeft(MoveLeftEvent moveLeftEvent) {
+    public void onRoleMovesLeft(RoleMovesLeftEvent event) {
 
     }
 
     @Override
-    public void onMoveRight(MoveRightEvent moveRightEvent) {
+    public void onRoleMovesRight(RoleMovesRightEvent event) {
 
     }
 
     @Override
-    public void onInjured(InjuredEvent injuredEvent) {
+    public void onRoleInjured(RoleInjuredEvent event) {
 
     }
 
     @Override
-    public void onThrowCurrentWeapon(ThrowCurrentWeaponEvent throwCurrentWeaponEvent) {
+    public void onRoleThrowsCurrentWeapon(RoleThrowsCurrentWeaponEvent event) {
 
     }
 
     @Override
-    public void onSwitchCurrentWeapon(SwitchCurrentWeaponEvent switchCurrentWeaponEvent) {
+    public void onRoleSwitchesCurrentWeapon(RoleSwitchesCurrentWeaponEvent event) {
 
     }
 
     @Override
-    public void onReload(ReloadEvent reloadEvent) {
+    public void onRoleReloadsGun(RoleReloadsGunEvent event) {
 
     }
 
     @Override
-    public void onWeaponUsed(UseWeaponEvent useWeaponEvent) {
+    public void onRoleWeaponUsed(RoleUsesWeaponEvent event) {
 
     }
 
     @Override
-    public void onPickUpWeapon(PickUpWeaponEvent pickUpWeaponEvent) {
+    public void onRolePicksUpWeapon(RolePicksUpWeaponEvent event) {
 
     }
 
     @Override
-    public void onTurnTo(TurnToEvent turnToEvent) {
+    public void onRoleTurnsAngleTo(RoleTurnsAngleToEvent event) {
 
     }
 
     @Override
-    public void onDead(DeadEvent deadEvent) {
+    public void onRoleDies(RoleDiesEvent event) {
 
     }
-
 }

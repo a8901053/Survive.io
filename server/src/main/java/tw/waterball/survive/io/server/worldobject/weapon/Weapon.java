@@ -8,5 +8,9 @@ public abstract class Weapon extends WorldObject {
     private Role weaponHolder;
     private int damage;
 
+    public Weapon(int weaponWidth, int weaponHeight) {
+        super(weaponWidth, weaponHeight);
+    }
+
     public abstract void useWeapon();
 }

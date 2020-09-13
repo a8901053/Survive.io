@@ -2,28 +2,31 @@ package tw.waterball.survive.io.api.api;
 
 import tw.waterball.survive.io.api.dto.request.*;
 
+/**
+ * @author - a89010531111@gmail.com
+ */
 public interface ServerApi {
 
-    void useWeapon(UseWeaponRequest useWeaponRequest);
+    void usePlayerWeapon(UsePlayerWeaponRequest request);
 
-    void reload(ReloadRequest reloadRequest);
+    void reloadPlayerGun(ReloadPlayerGunRequest request);
 
-    void turnTo(TurnToRequest turnToRequest);
+    void turnPlayerAngleTo(TurnPlayerAngleToRequest request);
 
-    void moveUp(MoveUpRequest moveUpRequest);
+    void movePlayerUp(MovePlayerUpRequest request);
 
-    void moveLeft(MoveLeftRequest moveLeftRequest);
+    void movePlayerLeft(MovePlayerLeftRequest request);
 
-    void moveRight(MoveRightRequest moveRightRequest);
+    void movePlayerRight(MovePlayerRightRequest request);
 
-    void moveDown(MoveDownRequest moveDownRequest);
+    void movePlayerDown(MovePlayerDownRequest request);
 
-    void pickUpWeapon(PickUpWeaponRequest pickUpWeaponRequest);
+    void pickUpWeaponToPlayer(PickUpWeaponToPlayerRequest request);
 
-    void playerThrowCurrentWeapon(ThrowCurrentWeaponRequest throwCurrentWeaponRequest);
+    void throwPlayerCurrentWeapon(ThrowPlayerCurrentWeaponRequest request);
 
-    void switchCurrentWeapon(SwitchCurrentWeaponRequest switchCurrentWeaponRequestWeaponRequest);
+    void switchPlayerCurrentWeapon(SwitchPlayerCurrentWeaponRequest request);
 
-    void login(LoginRequest loginRequest);
+    void login(LoginRequest request);
 
 }

@@ -22,7 +22,8 @@ public abstract class Role extends WorldObject {
     private List<Magazine> magazines;
     private WeaponSlot currentWeaponSlot;
 
-    public Role(int weaponSlotsSize) {
+    public Role(int weaponSlotsSize, int roleWidth, int roleHeight) {
+        super(roleWidth, roleHeight);
         weaponSlots = new WeaponSlot[weaponSlotsSize];
         initWeaponSlots();
     }
@@ -33,8 +34,7 @@ public abstract class Role extends WorldObject {
         }
     }
 
-
-    public void turnTo(float angle) {
+    public void turnAngleTo(float angle) {
         this.angle = angle;
     }
 
@@ -83,11 +83,11 @@ public abstract class Role extends WorldObject {
         return hp <= 0;
     }
 
-    public void addWeaponToWeaponSlot(Weapon weapon, int weaponSlotIndex) {
+    public void putWeaponToSlot(Weapon weapon, int weaponSlotIndex) {
         weaponSlots[weaponSlotIndex].setWeapon(weapon);
     }
 
-    public Weapon getWeaponByWeaponSlotIndex(int weaponSlotIndex) {
+    public Weapon getWeaponBySlotIndex(int weaponSlotIndex) {
         return weaponSlots[weaponSlotIndex].getWeapon();
     }
 
@@ -111,4 +111,7 @@ public abstract class Role extends WorldObject {
         this.hp = hp;
     }
 
+    public void setDef(int def) {
+        this.def = def;
+    }
 }

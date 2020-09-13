@@ -3,7 +3,7 @@ package tw.waterball.survive.io.api.dto.event;
 import lombok.Data;
 
 @Data
-public class SwitchCurrentWeaponEvent {
+public class RoleTurnsAngleToEvent {
     private int roleId;
-    private int weaponSlotIndex;
+    private float angle;
 }

@@ -3,7 +3,7 @@ package tw.waterball.survive.io.api.dto.event;
 import lombok.Data;
 
 @Data
-public class TurnToEvent {
+public class RoleInjuredEvent {
     private int roleId;
-    private float angle;
+    private int damage;
 }

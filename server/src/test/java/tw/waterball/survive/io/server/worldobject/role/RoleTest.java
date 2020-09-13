@@ -10,15 +10,14 @@ import tw.waterball.survive.io.server.worldobject.weapon.Weapon;
 /**
  * @author - a89010531111@gmail.com
  */
-
 public class RoleTest {
     private final ClientApi clientApi = Mockito.mock(ClientApi.class);
-    private final Role role = new Player(clientApi);
+    private final Role role = new Player(10, 20, clientApi);
 
 
     @Test
     public void whenTurnAngleTo50Degrees_thenAngleShouldBe50() {
-        role.turnTo(50);
+        role.turnAngleTo(50);
         Assert.assertEquals(50.0, role.getAngle(), 0.1);
     }
 
@@ -64,7 +63,7 @@ public class RoleTest {
 
     @Test
     public void givenHp60_whenBeInjuredBy30Damage_thenHpShouldDecreaseTo30() {
-        Role enemy = new Player(clientApi);
+        Role enemy = new Player(10, 20, clientApi);
         role.setHp(60);
 
         role.injure(enemy, 30);
@@ -88,18 +87,18 @@ public class RoleTest {
 
     @Test
     public void givenTwoWeapons_whenSwitchToFirstWeapon_thenCurrentWeaponShouldBeAtWeaponSlotIndex1() {
-        role.addWeaponToWeaponSlot(new Gun(), 0);
-        role.addWeaponToWeaponSlot(new Gun(), 1);
+        role.putWeaponToSlot(new Gun(10, 20), 0);
+        role.putWeaponToSlot(new Gun(10, 20), 1);
 
         role.switchCurrentWeapon(1);
 
-        Assert.assertEquals(role.getWeaponByWeaponSlotIndex(1), role.getCurrentWeapon());
+        Assert.assertEquals(role.getWeaponBySlotIndex(1), role.getCurrentWeapon());
     }
 
     @Test
     public void givenWeaponA_whenUseWeapon_thenAShouldBeUsed() {
         Weapon A = Mockito.mock(Weapon.class);
-        role.addWeaponToWeaponSlot(A, 0);
+        role.putWeaponToSlot(A, 0);
         role.switchCurrentWeapon(0);
 
         role.useWeapon();

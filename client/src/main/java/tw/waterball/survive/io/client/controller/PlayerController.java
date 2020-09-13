@@ -14,39 +14,39 @@ public class PlayerController {
     private ServerApi serverApi;
 
 
-    public void playerUseWeapon() {
+    public void usePlayerWeapon() {
 
     }
 
-    public void playerReload() {
+    public void reloadPlayerGun() {
 
     }
 
-    public void playerTurnTo(float angle) {
+    public void turnPlayerAngleTo(float angle) {
 
     }
 
-    public void playerMoveUp() {
+    public void movePlayerUp() {
 
     }
 
-    public void playerMoveLeft() {
+    public void movePlayerLeft() {
 
     }
 
-    public void playerMoveRight() {
+    public void movePlayerRight() {
 
     }
 
-    public void playerMoveDown() {
+    public void movePlayerDown() {
 
     }
 
-    public void playerThrowCurrentWeapon() {
+    public void throwPlayerCurrentWeapon() {
 
     }
 
-    public void playerSwitchCurrentWeapon(int weaponSlotIndex) {
+    public void switchPlayerCurrentWeapon(int weaponSlotIndex) {
 
     }
 

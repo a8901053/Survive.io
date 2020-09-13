@@ -9,57 +9,57 @@ public class GameController implements ServerApi {
 
 
     @Override
-    public void useWeapon(UseWeaponRequest useWeaponRequest) {
+    public void usePlayerWeapon(UsePlayerWeaponRequest request) {
 
     }
 
     @Override
-    public void reload(ReloadRequest reloadRequest) {
+    public void reloadPlayerGun(ReloadPlayerGunRequest request) {
 
     }
 
     @Override
-    public void turnTo(TurnToRequest turnToRequest) {
+    public void turnPlayerAngleTo(TurnPlayerAngleToRequest request) {
 
     }
 
     @Override
-    public void moveUp(MoveUpRequest moveUpRequest) {
+    public void movePlayerUp(MovePlayerUpRequest request) {
 
     }
 
     @Override
-    public void moveLeft(MoveLeftRequest moveLeftRequest) {
+    public void movePlayerLeft(MovePlayerLeftRequest request) {
 
     }
 
     @Override
-    public void moveRight(MoveRightRequest moveRightRequest) {
+    public void movePlayerRight(MovePlayerRightRequest request) {
 
     }
 
     @Override
-    public void moveDown(MoveDownRequest moveDownRequest) {
+    public void movePlayerDown(MovePlayerDownRequest request) {
 
     }
 
     @Override
-    public void pickUpWeapon(PickUpWeaponRequest pickUpWeaponRequest) {
+    public void pickUpWeaponToPlayer(PickUpWeaponToPlayerRequest request) {
 
     }
 
     @Override
-    public void playerThrowCurrentWeapon(ThrowCurrentWeaponRequest throwCurrentWeaponRequest) {
+    public void throwPlayerCurrentWeapon(ThrowPlayerCurrentWeaponRequest request) {
 
     }
 
     @Override
-    public void switchCurrentWeapon(SwitchCurrentWeaponRequest switchCurrentWeaponRequestWeaponRequest) {
+    public void switchPlayerCurrentWeapon(SwitchPlayerCurrentWeaponRequest request) {
 
     }
 
     @Override
-    public void login(LoginRequest loginRequest) {
+    public void login(LoginRequest request) {
 
     }
 }
