@@ -2,7 +2,7 @@ package tw.waterball.survive.io.server.controller;
 
 import tw.waterball.survive.io.api.api.ServerApi;
 import tw.waterball.survive.io.api.dto.request.*;
-import tw.waterball.survive.io.server.world.World;
+import tw.waterball.survive.io.game.world.World;
 
 public class GameController implements ServerApi {
     private World world;

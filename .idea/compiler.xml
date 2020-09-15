@@ -9,6 +9,7 @@
         <module name="client" />
         <module name="server" />
         <module name="protocol" />
+        <module name="game" />
         <module name="api" />
         <module name="ioc" />
       </profile>
