@@ -6,4 +6,8 @@ steps:
     image: maven:3-jdk-8
     commands:
       - mvn test -B
+    when:
+      event:
+      - pull_request
+      - push
 
