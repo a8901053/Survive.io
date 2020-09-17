@@ -86,5 +86,10 @@ public class StandardGameView extends GameView {
     public void onTurn(Role role) {
 
     }
+
+    @Override
+    public void onUpdate(List<Sprite> sprites) {
+
+    }
 }
 

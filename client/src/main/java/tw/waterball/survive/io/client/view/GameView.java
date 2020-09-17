@@ -2,6 +2,7 @@ package tw.waterball.survive.io.client.view;
 
 
 import tw.waterball.survive.io.client.controller.PlayerController;
+import tw.waterball.survive.io.game.gameloop.GameLoop;
 import tw.waterball.survive.io.game.sprite.Sprite;
 import tw.waterball.survive.io.game.sprite.role.Role;
 import tw.waterball.survive.io.game.sprite.weapon.Weapon;
@@ -9,7 +10,7 @@ import tw.waterball.survive.io.game.sprite.weapon.Weapon;
 import java.util.List;
 
 
-public abstract class GameView {
+public abstract class GameView implements GameLoop.Listener {
     private State state;
     private PlayerController playerController;
 
