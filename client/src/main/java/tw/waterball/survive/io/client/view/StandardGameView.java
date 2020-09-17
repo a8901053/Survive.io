@@ -1,8 +1,9 @@
 package tw.waterball.survive.io.client.view;
 
-import tw.waterball.survive.io.client.sprite.Sprite;
-import tw.waterball.survive.io.client.sprite.role.RoleSprite;
-import tw.waterball.survive.io.client.sprite.weapon.WeaponSprite;
+
+import tw.waterball.survive.io.game.sprite.Sprite;
+import tw.waterball.survive.io.game.sprite.role.Role;
+import tw.waterball.survive.io.game.sprite.weapon.Weapon;
 
 import java.util.List;
 
@@ -22,7 +23,7 @@ public class StandardGameView extends GameView {
     }
 
     @Override
-    public void onWeaponUsed(WeaponSprite weaponSprite) {
+    public void onWeaponUsed(Weapon weapon) {
 
     }
 
@@ -47,42 +48,42 @@ public class StandardGameView extends GameView {
     }
 
     @Override
-    public void onPickUpWeapon(RoleSprite roleSprite) {
+    public void onPickUpWeapon(Role role) {
 
     }
 
     @Override
-    public void onThrowWeapon(RoleSprite roleSprite) {
+    public void onThrowWeapon(Role role) {
 
     }
 
     @Override
-    public void onInjured(RoleSprite roleSprite, int damage) {
+    public void onInjured(Role role, int damage) {
 
     }
 
     @Override
-    public void onSwitchCurrentWeapon(RoleSprite roleSprite) {
+    public void onSwitchCurrentWeapon(Role role) {
 
     }
 
     @Override
-    public void onReload(RoleSprite roleSprite) {
+    public void onReload(Role role) {
 
     }
 
     @Override
-    public void onDead(RoleSprite roleSprite) {
+    public void onDead(Role role) {
 
     }
 
     @Override
-    public void onMove(RoleSprite roleSprite) {
+    public void onMove(Role role) {
 
     }
 
     @Override
-    public void onTurn(RoleSprite roleSprite) {
+    public void onTurn(Role role) {
 
     }
 }

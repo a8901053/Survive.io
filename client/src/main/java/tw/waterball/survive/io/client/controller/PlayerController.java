@@ -2,13 +2,13 @@ package tw.waterball.survive.io.client.controller;
 
 
 import tw.waterball.survive.io.api.api.ServerApi;
-import tw.waterball.survive.io.client.sprite.role.PlayerSprite;
-import tw.waterball.survive.io.client.sprite.weapon.WeaponSprite;
 import tw.waterball.survive.io.client.view.GameView;
+import tw.waterball.survive.io.game.sprite.role.Player;
+import tw.waterball.survive.io.game.sprite.weapon.Weapon;
+import tw.waterball.survive.io.game.world.SpriteContainer;
 
 public class PlayerController {
-    private PlayerSprite clientPlayerSprite;
-    private WeaponSprite playerCurrentWeaponSprite;
+    private Player clientPlayer;
     private GameView gameView;
     private SpriteContainer spriteContainer;
     private ServerApi serverApi;
@@ -51,11 +51,11 @@ public class PlayerController {
     }
 
 
-    public WeaponSprite getCurrentPlayerWeapon() {
+    public Weapon getCurrentPlayerWeapon() {
         return null;
     }
 
-    public void setCurrentWeapon(WeaponSprite weaponSprite) {
+    public void setCurrentWeapon(Weapon weapon) {
 
     }
 
