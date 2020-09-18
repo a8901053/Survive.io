@@ -28,6 +28,7 @@
         <module>ioc</module>
         <module>game</module>
         <module>interpreter</module>
+        <module>commons</module>
     </modules>
     <dependencies>
         <dependency>
