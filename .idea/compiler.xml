@@ -13,6 +13,7 @@
         <module name="interpreter" />
         <module name="api" />
         <module name="ioc" />
+        <module name="commons" />
       </profile>
     </annotationProcessing>
   </component>
