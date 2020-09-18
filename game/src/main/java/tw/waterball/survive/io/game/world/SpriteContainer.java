@@ -32,4 +32,8 @@ public class SpriteContainer {
     public List<Terrain> getMap() {
         return map;
     }
+
+    public void addSprite(Sprite sprite) {
+        sprites.add(sprite);
+    }
 }
