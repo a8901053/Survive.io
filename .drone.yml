@@ -8,6 +8,6 @@ steps:
       - mvn test -B
     when:
       event:
-      - pull_request
-      - push
+        - pull_request
+        - push
 
