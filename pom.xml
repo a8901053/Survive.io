@@ -27,6 +27,7 @@
         <module>api</module>
         <module>ioc</module>
         <module>game</module>
+        <module>poc</module>
     </modules>
     <dependencies>
         <dependency>
