@@ -22,20 +22,12 @@ public class StandardGameView extends GameView {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocation(300, 300);
         setSize(600, 600);
-        setVisible(true);
         setContentPane(canvasGame);
-    }
-
-    public static void main(String[] args) {
-        StandardGameView standardGameView = new StandardGameView(new PlayerController());
-        standardGameView.launch();
     }
 
     @Override
     public void launch() {
-    }
-
-    private void paintSprite(Graphics g, Sprite sprite) {
+        setVisible(true);
     }
 
     @Override
@@ -126,6 +118,9 @@ public class StandardGameView extends GameView {
             super.paintComponent(g);
             drawBackground(g);
             sprites.forEach(sprite -> paintSprite(g, sprite));
+        }
+
+        private void paintSprite(Graphics g, Sprite sprite) {
         }
 
         private void drawBackground(Graphics g) {
