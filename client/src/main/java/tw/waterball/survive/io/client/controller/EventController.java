@@ -29,6 +29,9 @@ public class EventController implements ClientApi {
     private SpriteContainer spriteContainer;
     private GameView gameView;
 
+    public void setSpriteContainer(SpriteContainer spriteContainer) {
+        this.spriteContainer = spriteContainer;
+    }
 
     @Override
     public void onPlayerLoginSuccessfully(RoleDTO loginPlayerDTO) {

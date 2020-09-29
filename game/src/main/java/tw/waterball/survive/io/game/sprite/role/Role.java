@@ -28,13 +28,13 @@ import java.util.Optional;
  * @author - a89010531111@gmail.com
  */
 public abstract class Role extends Sprite {
+    private final WeaponSlot[] weaponSlots;
     private String name;
     private int money;
     private int speed;
     private int def;
     private int hp;
     private int maxHp;
-    private final WeaponSlot[] weaponSlots;
     private List<Magazine> magazines;
     private WeaponSlot currentWeaponSlot;
 

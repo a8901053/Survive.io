@@ -29,6 +29,9 @@ public class PlayerController {
     private SpriteContainer spriteContainer;
     private ServerApi serverApi;
 
+    public void setGameView(GameView gameView) {
+        this.gameView = gameView;
+    }
 
     public void usePlayerWeapon() {
 
